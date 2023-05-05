@@ -1,0 +1,20 @@
+@import "../variables/MainColors.scss";
+
+.navbar-container{
+    height: 100vh;
+    background-color: green;
+}
+
+.icons-container{
+    display: flex;
+    flex-direction: column;
+    padding: 15vh 5vh;
+
+    i{
+        margin: 10px 5px 20px 5px;
+        cursor: pointer;
+        *{
+            font-size: 5vh;
+        }
+    }
+}

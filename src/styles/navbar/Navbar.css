@@ -1,0 +1,17 @@
+.navbar-container {
+  height: 100vh;
+  background-color: green;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15vh 5vh;
+}
+.icons-container i {
+  margin: 10px 5px 20px 5px;
+  cursor: pointer;
+}
+.icons-container i * {
+  font-size: 5vh;
+}/*# sourceMappingURL=Navbar.css.map */
