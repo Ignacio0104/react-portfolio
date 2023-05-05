@@ -1,6 +1,6 @@
 import "../styles/about/AboutMe.css";
 import ReactIcon from "../assets/icons/react-icon.png";
-import CSharpIcon from "../assets/icons/C#.png";
+import CSharpIcon from "../assets/icons/CSharp.png";
 import CssIcon from "../assets/icons/css.png";
 import FirebaseIcon from "../assets/icons/firebase.png";
 import GithubIcon from "../assets/icons/github.png";
@@ -19,7 +19,7 @@ const AboutMe = () => {
     <div className="about-container">
       <div className="description-container">
         <h2>About Me</h2>
-        <p>
+        <p className="description-text">
           Hi! My name is Ignacio, and I'm starting my professional IT path. I'm
           a self-motivated person who is eager to learn as much as possible
           about this exciting and constantly growing area. I like stepping out
@@ -36,40 +36,56 @@ const AboutMe = () => {
             <img src={ReactIcon} alt="react" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>Css</p>
+            <img src={CssIcon} alt="css" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>HTML</p>
+            <img src={HtmlIcon} alt="HTML" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>JavaScript</p>
+            <img src={JavaScriptIcon} alt="JavaScript" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>Sass</p>
+            <img src={SassIcon} alt="sass" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>GitHub</p>
+            <img src={GithubIcon} alt="github" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>GraphQl</p>
+            <img src={GraphQlIcon} alt="GraphQl" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>Jest</p>
+            <img src={JestIcon} alt="Jest" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>PHP</p>
+            <img src={PhpIcon} alt="PHP" />
           </div>
           <div className="skill-item">
-            <p>React</p>
-            <img src={ReactIcon} alt="react" />
+            <p>TypeScript</p>
+            <img src={TypeScriptIcon} alt="TypeScript" />
+          </div>
+          <div className="skill-item">
+            <p>C#.NET</p>
+            <img src={CSharpIcon} alt="C#.NET" />
+          </div>
+          <div className="skill-item">
+            <p>SQL</p>
+            <img src={SqlIcon} alt="SQL" />
+          </div>
+          <div className="skill-item">
+            <p>Firebase</p>
+            <img src={FirebaseIcon} alt="Firebase" />
+          </div>
+          <div className="skill-item">
+            <p>Java</p>
+            <img src={JavaIcon} alt="Java" />
           </div>
         </div>
       </div>

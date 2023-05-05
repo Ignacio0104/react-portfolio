@@ -15,9 +15,13 @@
   width: 60vw;
 }
 
+.description-text {
+  font-size: 14px;
+}
+
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(7, auto);
+  grid-template-columns: repeat(5, 12vw);
 }
 
 .skill-item {

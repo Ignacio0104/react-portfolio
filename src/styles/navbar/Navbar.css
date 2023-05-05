@@ -11,10 +11,13 @@
   padding: 15vh 5vh;
 }
 .icons-container i {
+  display: flex;
+  flex-direction: column;
   margin: 10px 5px 20px 5px;
   cursor: pointer;
-}
-.icons-container i * {
   font-size: 5vh;
   color: wheat;
+}
+.icons-container i span {
+  font-size: 10px;
 }/*# sourceMappingURL=Navbar.css.map */
