@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 .navbar-container {
   height: 100vh;
   background-color: #000814;
@@ -15,5 +16,5 @@
 }
 .icons-container i * {
   font-size: 5vh;
-  color: #ffc300;
+  color: wheat;
 }/*# sourceMappingURL=Navbar.css.map */

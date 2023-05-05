@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="icons-container">
-        <i onClick={() => navigate("/")}>
+        <i className="gradient-icon" onClick={() => navigate("/")}>
           <HomeIcon />
         </i>
         <i onClick={() => navigate("/about")}>

@@ -7,3 +7,14 @@
     overflow: hidden;
 }
 
+@media (max-width: 1250px) {
+    .App{
+        display: flex;
+        background-image: url("../../assets/images/background-mountains.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+  }
+

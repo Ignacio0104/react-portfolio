@@ -1,0 +1,44 @@
+@import "../variables/MainColors.scss";
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3vh;
+    animation: fade-in-about 0.5s ease-out forwards;  
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    font-family: $main-font;
+    color: $black-color;
+    width: 60vw;
+}
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+}
+
+.skill-item{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    img{
+        margin-left: 10px;
+        height: 4vh;
+    }
+}
+
+@keyframes fade-in-about {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+    
