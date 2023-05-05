@@ -1,3 +1,9 @@
+@import "../variables/MainColors.scss";
 .App{
     display: flex;
+    background-image: url("../../assets/images/background-mountains.jpg");
+    background-size: 100%;
+    z-index: -10000;
+    overflow: hidden;
 }
+

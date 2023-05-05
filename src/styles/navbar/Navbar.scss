@@ -2,19 +2,20 @@
 
 .navbar-container{
     height: 100vh;
-    background-color: green;
+    background-color: $black-color;
+    border-right: 1px solid $gray-color;
 }
 
 .icons-container{
     display: flex;
     flex-direction: column;
     padding: 15vh 5vh;
-
     i{
         margin: 10px 5px 20px 5px;
         cursor: pointer;
         *{
             font-size: 5vh;
+            color: $dark-yellow
         }
     }
 }

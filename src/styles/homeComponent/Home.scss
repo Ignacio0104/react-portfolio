@@ -1,0 +1,113 @@
+@import "../variables/MainColors.scss";
+.home-container{
+    width: 100vw;
+    height: 100vh;
+    animation: no-animation 0.5s ease-out forwards;   
+    overflow: hidden;
+    font-family: $main-font; 
+}
+
+.information-container{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    padding-top: 10vh;
+    animation: fade-in 0.5s ease-out forwards;  
+    span{
+        font-weight: bold;
+    }
+}
+
+.image-container{
+    display: flex;
+    img{
+        height: 50vh;
+        width: 23vw;
+        z-index: 100;
+        border-radius: 50%;
+        margin-right: 40px;
+        border: 2px solid $gray-color;
+    }
+    
+}
+
+.description-container{
+    color: $black-color;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container{
+    margin-top: 20px;
+}
+
+.btn-cv-container {
+    cursor: pointer;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #edf6f995;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(#c2cccf95, 15%);
+      transition: all .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+.btn-cv{
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    background: linear-gradient(284deg, rgba(241,68,5,0.6588760504201681) 0%, rgba(126,17,209,0.720500700280112) 37%, rgba(4,140,63,0.6280637254901961) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fade-in {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+
+@keyframes no-animation {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }

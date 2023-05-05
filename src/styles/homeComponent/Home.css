@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  animation: no-animation 0.5s ease-out forwards;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.information-container {
+  display: flex;
+  width: 70vw;
+  margin: auto;
+  align-items: center;
+  padding-top: 10vh;
+  animation: fade-in 0.5s ease-out forwards;
+}
+.information-container span {
+  font-weight: bold;
+}
+
+.image-container {
+  display: flex;
+}
+.image-container img {
+  height: 50vh;
+  width: 23vw;
+  z-index: 100;
+  border-radius: 50%;
+  margin-right: 40px;
+  border: 2px solid #e5e5e5;
+}
+
+.description-container {
+  color: #000814;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.btn-cv-container {
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn-cv-container:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(237, 246, 249, 0.5843137255);
+  z-index: -2;
+}
+.btn-cv-container:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(151, 168, 173, 0.5843137255);
+  transition: all 0.3s;
+  z-index: -1;
+}
+.btn-cv-container:hover {
+  color: #fff;
+}
+.btn-cv-container:hover:before {
+  width: 100%;
+}
+
+.btn-cv {
+  border-radius: 15px;
+  border: none;
+  text-decoration: none;
+  background: linear-gradient(284deg, rgba(241, 68, 5, 0.6588760504) 0%, rgba(126, 17, 209, 0.7205007003) 37%, rgba(4, 140, 63, 0.6280637255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes no-animation {
+  from {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=Home.css.map */
