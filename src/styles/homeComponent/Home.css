@@ -91,6 +91,7 @@
 }
 
 .btn-linkedin {
+  background-color: transparent;
   display: flex;
   font-weight: 600;
   font-size: 3vh;

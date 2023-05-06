@@ -20,20 +20,12 @@
     font-size: 14px;
 }
 
-.skills-container{
-    display: grid;
-    grid-template-columns: repeat(5,12vw);
+.about-info-container{
+    display: flex;
+    justify-content: space-between;
 }
 
-.skill-item{
-    display: flex;
-    align-items: center;
-    height: 6vh;
-    img{
-        margin-left: 10px;
-        height: 4vh;
-    }
-}
+
 
 @keyframes fade-in-about {
     from {

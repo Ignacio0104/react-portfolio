@@ -31,7 +31,12 @@ const Home = () => {
                   Download cv
                 </a>
               </div>
-              <button className="btn-linkedin">
+              <button
+                className="btn-linkedin"
+                onClick={() =>
+                  window.open("http://www.linkedin.com/in/ignacio-smirlian")
+                }
+              >
                 LinkedIn <LinkedInIcon />
               </button>
             </div>

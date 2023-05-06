@@ -19,19 +19,9 @@
   font-size: 14px;
 }
 
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(5, 12vw);
-}
-
-.skill-item {
+.about-info-container {
   display: flex;
-  align-items: center;
-  height: 6vh;
-}
-.skill-item img {
-  margin-left: 10px;
-  height: 4vh;
+  justify-content: space-between;
 }
 
 @keyframes fade-in-about {
