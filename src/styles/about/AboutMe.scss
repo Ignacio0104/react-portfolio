@@ -2,27 +2,25 @@
 
 .about-container{
     display: flex;
-    justify-content: center;
-    margin: auto;
-    margin-top: 3vh;
+    flex-direction: column;
     animation: fade-in-about 0.5s ease-out forwards;  
+    width: 90%;
 }
 
-.description-container{
-    display: flex;
-    flex-direction: column;
+.about-description-container{
+    margin: 3vh 15vw 1vh 15vw ;
     font-family: $main-font;
     color: $black-color;
     width: 60vw;
 }
 
-.description-text{
+.about-description-text{
     font-size: 14px;
 }
 
 .about-info-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 

@@ -1,27 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 .about-container {
   display: flex;
-  justify-content: center;
-  margin: auto;
-  margin-top: 3vh;
+  flex-direction: column;
   animation: fade-in-about 0.5s ease-out forwards;
+  width: 90%;
 }
 
-.description-container {
-  display: flex;
-  flex-direction: column;
+.about-description-container {
+  margin: 3vh 15vw 1vh 15vw;
   font-family: "Poppins", sans-serif;
   color: #000814;
   width: 60vw;
 }
 
-.description-text {
+.about-description-text {
   font-size: 14px;
 }
 
 .about-info-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 @keyframes fade-in-about {

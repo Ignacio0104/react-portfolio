@@ -1,5 +1,5 @@
 @import "../variables/MainColors.scss";
-.skills-main-container{
+.education-container{
     background: rgba(255, 255, 255, 0.42);
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.6);
@@ -9,25 +9,7 @@
     -webkit-backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
-    .skills-title{
-        margin-left: 5vh;
-    }
+    padding: 0vh 2vw;
+    width: 25vw;
     font-family: $main-font;
-}
-
-.skills-container{
-    display: grid;
-    grid-template-columns: repeat(3,9vw);
-    justify-content: center;
-    padding: 1vw;
-}
-
-.skill-item{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 6vh;
-    img{
-        height: 4vh;
-    }
 }

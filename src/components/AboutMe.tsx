@@ -1,12 +1,13 @@
+import Education from "../pure/Education";
 import Skills from "../pure/Skills";
 import "../styles/about/AboutMe.css";
 
 const AboutMe = () => {
   return (
     <div className="about-container">
-      <div className="description-container">
+      <div className="about-description-container">
         <h2>About Me</h2>
-        <p className="description-text">
+        <p className="about-description-text">
           Hi! My name is Ignacio, and I'm starting my professional IT path. I'm
           a self-motivated person who is eager to learn as much as possible
           about this exciting and constantly growing area. I like stepping out
@@ -17,10 +18,10 @@ const AboutMe = () => {
           partners and go the extra mile to accomplish the team goals. I thank
           you for your time, and I hope that we can work together soon.
         </p>
-        <div className="about-info-container">
-          <Skills></Skills>
-          <Skills></Skills>
-        </div>
+      </div>
+      <div className="about-info-container">
+        <Skills></Skills>
+        <Education></Education>
       </div>
     </div>
   );
