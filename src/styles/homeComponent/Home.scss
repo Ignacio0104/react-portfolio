@@ -1,6 +1,6 @@
 @import "../variables/MainColors.scss";
 .home-container{
-    width: 100vw;
+    width: 90%;
     height: 100vh;
     overflow: hidden;
     font-family: $main-font; 
@@ -39,9 +39,11 @@
 
 .button-container{
     margin-top: 20px;
+    display: flex;
 }
 
 .btn-cv-container {
+    margin-right: 5vw;
     cursor: pointer;
     width: fit-content;
     padding: 10px;
@@ -87,6 +89,55 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.btn-linkedin{
+    display: flex;
+    font-weight: 600;
+    font-size: 3vh;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #edf6f995;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: darken(#c2cccf95, 15%);
+      transition: all .3s;
+      z-index: -1;
+    }
+    &:hover {
+      color: #0072b1;
+      &:before {
+        width: 100%;
+      }
+    }
+    *{
+        margin-left: 0.5vw;
+        color: #0072b1;
+    }
+}
+
+
 
 @keyframes fade-in {
 from {

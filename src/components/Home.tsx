@@ -1,7 +1,7 @@
 import ProfilePic from "../assets/images/profile-pic-small.jpg";
 import "../styles/homeComponent/Home.css";
-import BackgroundImage from "../assets/images/background-mountains.jpg";
 import CvFile from "../assets/documents/IgnacioSmirlian-CV2023.pdf";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Home = () => {
   return (
@@ -31,6 +31,9 @@ const Home = () => {
                   Download cv
                 </a>
               </div>
+              <button className="btn-linkedin">
+                LinkedIn <LinkedInIcon />
+              </button>
             </div>
           </div>
         </div>

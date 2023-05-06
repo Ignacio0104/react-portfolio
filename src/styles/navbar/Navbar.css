@@ -8,16 +8,18 @@
 .icons-container {
   display: flex;
   flex-direction: column;
-  padding: 15vh 5vh;
+  padding: 15vh 2vh;
 }
 .icons-container i {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 10px 5px 20px 5px;
   cursor: pointer;
-  font-size: 5vh;
   color: wheat;
 }
 .icons-container i span {
   font-size: 10px;
+  font-style: normal;
+  color: rgba(241, 95, 156, 0.7647058824);
 }/*# sourceMappingURL=Navbar.css.map */

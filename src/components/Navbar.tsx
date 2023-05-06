@@ -48,17 +48,47 @@ const Navbar = () => {
             About
           </span>
         </i>
-        <i onClick={() => navigate("/portfolio")}>
+        <i
+          onClick={() => navigate("/portfolio")}
+          onMouseEnter={() => toogleMenuOption("portfolio", true)}
+          onMouseLeave={() => toogleMenuOption("portfolio", false)}
+        >
           <CodeIcon />
-          <span>Home</span>
+          <span
+            style={{
+              visibility: menuVisibility.portfolio ? "visible" : "hidden",
+            }}
+          >
+            Portofolio
+          </span>
         </i>
-        <i onClick={() => navigate("/workExperience")}>
+        <i
+          onClick={() => navigate("/workExperience")}
+          onMouseEnter={() => toogleMenuOption("workExperience", true)}
+          onMouseLeave={() => toogleMenuOption("workExperience", false)}
+        >
           <WorkIcon />
-          <span>Home</span>
+          <span
+            style={{
+              visibility: menuVisibility.workExperience ? "visible" : "hidden",
+            }}
+          >
+            Work Experience
+          </span>
         </i>
-        <i onClick={() => navigate("/contact")}>
+        <i
+          onClick={() => navigate("/contact")}
+          onMouseEnter={() => toogleMenuOption("contact", true)}
+          onMouseLeave={() => toogleMenuOption("contact", false)}
+        >
           <PhoneIcon />
-          <span>Home</span>
+          <span
+            style={{
+              visibility: menuVisibility.contact ? "visible" : "hidden",
+            }}
+          >
+            Contact
+          </span>
         </i>
       </div>
     </div>
