@@ -34,7 +34,6 @@
         color: $dark-blue;
         margin-top: 2vh;
         text-decoration: none;
-        font-family: $main-font;
         font-size: small;
         background-color: rgba(181, 175, 175, 0.607);
         padding: 5px;
@@ -49,5 +48,18 @@
 .more-btn{
     margin-top: 10px;
     padding: 5px 0px;
+    font-family: $main-font;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-image: url("../../assets/images/button-background-opacitiy.png");
+    background-size: cover;
+}
+
+.more-btn:hover{
+    background-image: url("../../assets/images/button-background.png");
+    color: wheat;
 }
 
