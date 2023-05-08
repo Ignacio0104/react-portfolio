@@ -3,12 +3,14 @@
   height: 100vh;
   background-color: #000814;
   border-right: 1px solid #e5e5e5;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
 }
 
 .icons-container {
   display: flex;
   flex-direction: column;
-  padding: 20vh 2vh;
+  padding: 20vh 0vh;
 }
 .icons-container i {
   display: flex;
@@ -16,7 +18,7 @@
   align-items: center;
   margin: 10px 5px 20px 5px;
   cursor: pointer;
-  color: wheat;
+  color: #d3aac0;
 }
 .icons-container i span {
   font-size: 10px;

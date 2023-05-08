@@ -1,18 +1,18 @@
-import ReactIcon from "../assets/icons/react-icon.png";
-import CSharpIcon from "../assets/icons/CSharp.png";
-import CssIcon from "../assets/icons/css.png";
-import FirebaseIcon from "../assets/icons/firebase.png";
-import GithubIcon from "../assets/icons/github.png";
-import GraphQlIcon from "../assets/icons/graphQl.png";
-import HtmlIcon from "../assets/icons/html.png";
-import JavaIcon from "../assets/icons/java.png";
-import JavaScriptIcon from "../assets/icons/javascript.png";
-import JestIcon from "../assets/icons/jest.png";
-import PhpIcon from "../assets/icons/php.png";
-import SassIcon from "../assets/icons/sass.png";
-import SqlIcon from "../assets/icons/sql.png";
-import TypeScriptIcon from "../assets/icons/typescript.png";
-import "../styles/skills/Skills.css";
+import ReactIcon from "../../assets/icons/react-icon.png";
+import CSharpIcon from "../../assets/icons/CSharp.png";
+import CssIcon from "../../assets/icons/css.png";
+import FirebaseIcon from "../../assets/icons/firebase.png";
+import GithubIcon from "../../assets/icons/github.png";
+import GraphQlIcon from "../../assets/icons/graphQl.png";
+import HtmlIcon from "../../assets/icons/html.png";
+import JavaIcon from "../../assets/icons/java.png";
+import JavaScriptIcon from "../../assets/icons/javascript.png";
+import JestIcon from "../../assets/icons/jest.png";
+import PhpIcon from "../../assets/icons/php.png";
+import SassIcon from "../../assets/icons/sass.png";
+import SqlIcon from "../../assets/icons/sql.png";
+import TypeScriptIcon from "../../assets/icons/typescript.png";
+import "../../styles/skills/Skills.css";
 
 const Skills = () => {
   return (

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
-import "../styles/education/Education.css";
+import "../../styles/education/Education.css";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import { useState } from "react";
 
 const certificationsURLs = {
   ReactJSAdvanced:
@@ -25,9 +24,11 @@ const certificationsURLs = {
     "https://www.scrumstudy.com/certification/verify?type=SFC&number=909115",
 };
 
-const Education = () => {
-  const [first, setfirst] = useState(false);
+interface IEducationProps {
+  toogleCertificate: (bool: boolean) => void;
+}
 
+const Education = ({ toogleCertificate }: IEducationProps) => {
   return (
     <div className="education-container">
       <h2>Education</h2>
@@ -66,7 +67,9 @@ const Education = () => {
           </div>
         </div>
       </div>
-      <button className="more-btn">View more...</button>
+      <button className="more-btn" onClick={() => toogleCertificate(true)}>
+        View more...
+      </button>
     </div>
   );
 };

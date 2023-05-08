@@ -82,10 +82,10 @@
 }
 
 .btn-cv {
-  border-radius: 15px;
   border: none;
+  font-weight: bold;
   text-decoration: none;
-  background: linear-gradient(284deg, rgba(241, 68, 5, 0.6588760504) 0%, rgba(126, 17, 209, 0.7205007003) 37%, rgba(4, 140, 63, 0.6280637255) 100%);
+  background: linear-gradient(284deg, rgba(214, 59, 3, 0.659) 0%, rgba(247, 37, 247, 0.721) 37%, rgba(130, 3, 62, 0.628) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

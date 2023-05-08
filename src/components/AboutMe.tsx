@@ -1,8 +1,15 @@
-import Education from "../pure/Education";
-import Skills from "../pure/Skills";
+import { useState } from "react";
 import "../styles/about/AboutMe.css";
+import Education from "./pure/Education";
+import Certificates from "./pure/Certificates";
+import Skills from "./pure/Skills";
 
 const AboutMe = () => {
+  const [allCertificates, setAllCertificates] = useState(false);
+
+  const toogleCertificates = (bool: boolean): void => {
+    setAllCertificates(bool);
+  };
   return (
     <div className="about-container">
       <div className="about-description-container">
@@ -21,7 +28,10 @@ const AboutMe = () => {
       </div>
       <div className="about-info-container">
         <Skills></Skills>
-        <Education></Education>
+        <Education toogleCertificate={toogleCertificates}></Education>
+        {allCertificates && (
+          <Certificates toogleCertificate={toogleCertificates}></Certificates>
+        )}
       </div>
     </div>
   );
