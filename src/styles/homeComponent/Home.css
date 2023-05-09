@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 .home-container {
   width: 90%;
   height: 100vh;
@@ -34,6 +35,14 @@
   color: #000814;
   display: flex;
   flex-direction: column;
+}
+.description-container h3 {
+  font-family: "Caveat", cursive;
+  font-size: 8vh;
+  -webkit-margin-before: 1vh;
+          margin-block-start: 1vh;
+  -webkit-margin-after: 1vh;
+          margin-block-end: 1vh;
 }
 
 .button-container {
@@ -147,5 +156,40 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+  }
+  .information-container {
+    padding-top: 0px;
+  }
+  .image-container {
+    display: flex;
+  }
+  .image-container img {
+    height: 40vh;
+    width: 25vw;
+    z-index: 100;
+    border-radius: 50%;
+    margin-right: 40px;
+    border: 2px solid #e5e5e5;
+  }
+  .btn-linkedin {
+    font-weight: 600;
+    font-size: 2vh;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .information-container {
+    padding-top: 0px;
+    font-size: 2vh;
+  }
+  .image-container img {
+    width: 20vw;
   }
 }/*# sourceMappingURL=Home.css.map */

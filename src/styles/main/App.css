@@ -15,4 +15,9 @@
     background-size: cover;
     overflow: hidden;
   }
+}
+@media screen and (min-width: 1440px) {
+  .App {
+    background-size: cover;
+  }
 }/*# sourceMappingURL=App.css.map */
