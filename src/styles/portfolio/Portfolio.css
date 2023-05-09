@@ -1,0 +1,13 @@
+.project-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 10px;
+  margin: auto;
+  height: 10px;
+}
+
+.swiper {
+  width: 90vw;
+}/*# sourceMappingURL=Portfolio.css.map */
