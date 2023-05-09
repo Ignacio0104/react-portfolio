@@ -6,8 +6,20 @@
   width: 10px;
   margin: auto;
   height: 10px;
+  animation: fade-in-portfolio 0.5s ease-out forwards;
 }
 
 .swiper {
   width: 90vw;
+}
+
+@keyframes fade-in-portfolio {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=Portfolio.css.map */

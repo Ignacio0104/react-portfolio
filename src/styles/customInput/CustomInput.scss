@@ -1,0 +1,34 @@
+@import "../variables/MainColors.scss";
+input,textarea{
+    background: rgb(97,97,97);
+    background: linear-gradient(81deg, rgba(97,97,97,0.555234593837535) 0%, rgba(40,3,68,0.46559873949579833) 37%, rgba(2,3,3,0.38996848739495793) 100%);
+    color: $dark-yellow;
+    width: 25vw;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 3vh;
+}
+
+
+
+.input-error{
+    outline: 3px solid tomato;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-ok::placeholder, .input-error::placeholder{
+    color:$dark-yellow
+}
+.input-ok:focus{
+    outline: none;
+}
+
+.error{
+    color: rgb(194, 37, 10);
+    font-weight: bold;
+}
+
+textarea{
+    resize: none;
+}

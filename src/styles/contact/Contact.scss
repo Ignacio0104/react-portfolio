@@ -1,0 +1,74 @@
+@import "../variables/MainColors.scss";
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5vh auto;
+    h2{
+        font-family: $name-font;
+        font-size: 8vh;
+    }
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7vh 5vh 7vh 5vh 7vh 5vh 12vh 5vh
+}
+
+
+.submit-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px 10px;
+    width: 12vw;
+    margin: auto;
+    border-radius: 10px;
+    background-image: url("../../assets/images/button-background.png");
+    background-size: cover;
+    color: wheat;
+    font-weight: bold;
+    font-family: $main-font; 
+    span{
+        display: none;
+        animation: fade-in-button 0.5s ease-out forwards; 
+        margin-top:3px
+    }
+}
+
+button:hover{
+    span{
+        display: inline;
+    }
+    p{
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+
+@keyframes fade-in-button {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+    
+
+    @keyframes fade-out-button {
+        from {
+            opacity: 0;
+            transform: translateX(10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+        }
+        

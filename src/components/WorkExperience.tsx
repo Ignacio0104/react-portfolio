@@ -1,4 +1,5 @@
 import "../styles/workExperience/workExperience.css";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const WorkExperience = () => {
   return (
@@ -42,6 +43,14 @@ const WorkExperience = () => {
               </p>
             </div>
           </div>
+          <button
+            className="btn-linkedin"
+            onClick={() =>
+              window.open("http://www.linkedin.com/in/ignacio-smirlian")
+            }
+          >
+            LinkedIn <LinkedInIcon />
+          </button>
         </div>
       </div>
       <div className="timeline">

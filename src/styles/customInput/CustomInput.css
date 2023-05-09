@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+input, textarea {
+  background: rgb(97, 97, 97);
+  background: linear-gradient(81deg, rgba(97, 97, 97, 0.5552345938) 0%, rgba(40, 3, 68, 0.4655987395) 37%, rgba(2, 3, 3, 0.3899684874) 100%);
+  color: #ffc300;
+  width: 25vw;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 3vh;
+}
+
+.input-error {
+  outline: 3px solid tomato;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-ok::-moz-placeholder, .input-error::-moz-placeholder {
+  color: #ffc300;
+}
+
+.input-ok::placeholder, .input-error::placeholder {
+  color: #ffc300;
+}
+
+.input-ok:focus {
+  outline: none;
+}
+
+.error {
+  color: rgb(194, 37, 10);
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}/*# sourceMappingURL=CustomInput.css.map */
