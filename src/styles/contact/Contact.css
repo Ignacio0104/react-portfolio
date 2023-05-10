@@ -4,11 +4,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vh auto;
+  margin: 2vh auto;
+  animation: fade-in-contact 0.5s ease-in forwards;
 }
 .contact-container h2 {
   font-family: "Caveat", cursive;
   font-size: 8vh;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.contact-icons-container {
+  display: flex;
+  margin: 3vh;
+  width: 20vw;
+  justify-content: space-around;
+}
+.contact-icons-container a {
+  display: flex;
+  align-items: center;
+  background: rgb(97, 97, 97);
+  background: linear-gradient(81deg, rgba(97, 97, 97, 0.5552345938) 0%, rgba(40, 3, 68, 0.4655987395) 37%, rgba(2, 3, 3, 0.3899684874) 100%);
+  border-radius: 50%;
+  color: #ffc300;
+  padding: 2px;
+}
+.contact-icons-container a:hover {
+  color: rgb(237, 148, 160);
+  transition: all 0.3s ease-in;
 }
 
 .input-container {
@@ -32,13 +55,42 @@
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
-.submit-btn span {
+.submit-btn .send-icon {
   display: none;
   animation: fade-in-button 0.5s ease-out forwards;
   margin-top: 3px;
 }
 
-button:hover span {
+.spinner {
+  color: wheat;
+}
+
+.thanks-message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10vh 25vw;
+  animation: fade-in-contact 0.5s ease-in forwards;
+}
+.thanks-message-container .thank-title {
+  font-family: "Caveat", cursive;
+}
+.thanks-message-container .new-message-btn {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(172, 169, 169, 0.505);
+  font-family: "Poppins", sans-serif;
+}
+.thanks-message-container .new-message-btn:hover {
+  background-color: rgba(228, 226, 226, 0.795);
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover .send-icon {
   display: inline;
 }
 button:hover p {
@@ -63,5 +115,13 @@ button:hover p {
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@keyframes fade-in-contact {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }/*# sourceMappingURL=Contact.css.map */

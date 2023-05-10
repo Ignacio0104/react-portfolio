@@ -6,11 +6,11 @@ interface ICustomInputProps {
   name: string;
   type: string;
   placeholder: string;
+  handleChange: (arg1: string, arg2: string) => void;
 }
 
-const CustomInput = ({ label, ...props }: ICustomInputProps) => {
+const CustomInput = ({ label, handleChange, ...props }: ICustomInputProps) => {
   const [field, meta] = useField(props);
-  console.log(props);
   return (
     <>
       {props.type !== "textarea" ? (
@@ -18,12 +18,14 @@ const CustomInput = ({ label, ...props }: ICustomInputProps) => {
           {...field}
           {...props}
           className={meta.touched && meta.error ? "input-error" : "input-ok"}
+          onBlur={(e) => handleChange(props.name, e.target.value)}
         />
       ) : (
         <textarea
           {...field}
           {...props}
           className={meta.touched && meta.error ? "input-error" : "input-ok"}
+          onBlur={(e) => handleChange(props.name, e.target.value)}
         ></textarea>
       )}
 

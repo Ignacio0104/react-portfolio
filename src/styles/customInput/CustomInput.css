@@ -8,7 +8,14 @@ input, textarea {
   padding-left: 10px;
   border-radius: 10px;
   border: none;
+}
+
+input {
   font-size: 3vh;
+}
+
+textarea {
+  font-size: 2.3vh;
 }
 
 .input-error {
@@ -17,11 +24,11 @@ input, textarea {
 }
 
 .input-ok::-moz-placeholder, .input-error::-moz-placeholder {
-  color: #ffc300;
+  color: rgba(255, 196, 0, 0.5254901961);
 }
 
 .input-ok::placeholder, .input-error::placeholder {
-  color: #ffc300;
+  color: rgba(255, 196, 0, 0.5254901961);
 }
 
 .input-ok:focus {
@@ -31,6 +38,10 @@ input, textarea {
 .error {
   color: rgb(194, 37, 10);
   font-weight: bold;
+  font-weight: 300;
+  font-size: 2vh;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 textarea {

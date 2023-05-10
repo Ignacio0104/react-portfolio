@@ -4,10 +4,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5vh auto;
+    margin: 2vh auto;
     h2{
         font-family: $name-font;
         font-size: 8vh;
+        margin-block-end: 0px;
+    }
+    animation: fade-in-contact 0.5s ease-in forwards; 
+}
+
+.contact-icons-container{
+    display: flex;
+    margin: 3vh;
+    width:20vw;
+    justify-content: space-around; 
+    a{
+        display: flex;
+        align-items: center;
+        background: rgb(97,97,97);
+        background: linear-gradient(81deg, rgba(97,97,97,0.555234593837535) 0%, rgba(40,3,68,0.46559873949579833) 37%, rgba(2,3,3,0.38996848739495793) 100%);
+        border-radius: 50%;
+        color: $dark-yellow;
+        padding: 2px;
+    }
+    a:hover{
+        color: rgb(237, 148, 160);
+        transition: all 0.3s ease-in;
     }
 }
 
@@ -32,15 +54,49 @@
     color: wheat;
     font-weight: bold;
     font-family: $main-font; 
-    span{
+    .send-icon{
         display: none;
         animation: fade-in-button 0.5s ease-out forwards; 
         margin-top:3px
     }
 }
 
+.spinner{
+    color: wheat;
+}
+
+.thanks-message-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    margin: 10vh 25vw;
+    animation: fade-in-contact 0.5s ease-in forwards; 
+    
+
+    .thank-title{
+        font-family: $name-font;
+    }
+
+    .new-message-btn{
+        cursor: pointer;
+        padding:10px;
+        border-radius: 10px;
+        border:none;
+        background-color: rgba(172, 169, 169, 0.505);
+        font-family: $main-font;
+    }
+
+    .new-message-btn:hover{
+        background-color: rgba(228, 226, 226, 0.795);
+        transition: all 0.5s ease-in-out;
+    }
+    
+}
+
+
 button:hover{
-    span{
+    .send-icon{
         display: inline;
     }
     p{
@@ -61,14 +117,24 @@ button:hover{
     }
     
 
-    @keyframes fade-out-button {
-        from {
-            opacity: 0;
-            transform: translateX(10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0px);
-        }
-        }
+@keyframes fade-out-button {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    }
+
+@keyframes fade-in-contact{
+      from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    
+}
         
