@@ -33,7 +33,7 @@
           margin-block-end: 0;
 }
 .project-text-container .project-description {
-  font-size: 15px;
+  font-size: 2.5vh;
 }
 
 .project-details-container {
@@ -41,7 +41,7 @@
   grid-template-columns: repeat(2, auto);
 }
 .project-details-container p {
-  font-size: 12px;
+  font-size: 2vh;
 }
 .project-details-container a {
   text-decoration: none;

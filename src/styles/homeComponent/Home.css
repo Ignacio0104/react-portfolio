@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 .home-container {
-  width: 90%;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
+  display: flex;
 }
 
 .information-container {
@@ -14,6 +15,7 @@
   align-items: center;
   padding-top: 10vh;
   animation: fade-in 0.5s ease-out forwards;
+  margin-right: 10vh;
 }
 .information-container span {
   font-weight: bold;
@@ -173,7 +175,7 @@
   }
   .image-container img {
     height: 40vh;
-    width: 25vw;
+    width: 22vw;
     z-index: 100;
     border-radius: 50%;
     margin-right: 40px;
@@ -191,5 +193,34 @@
   }
   .image-container img {
     width: 20vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .image-container img {
+    width: 22vw;
+    height: 40vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .image-container img {
+    width: 22vw;
+    height: 40vh;
+  }
+  .description-container p {
+    font-size: 2vh;
+  }
+  .description-container h3 {
+    font-size: 5vh;
+  }
+  .btn-linkedin {
+    font-weight: 600;
+    font-size: 2.5vh;
+    padding: 1vh 2vw;
+  }
+  .btn-linkedin svg {
+    font-size: 3.5vh;
+  }
+  .btn-cv {
+    font-size: 2.4vh;
   }
 }/*# sourceMappingURL=Home.css.map */

@@ -1,11 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+.navbar-responsive-container {
+  display: none;
+  background-color: rgba(0, 8, 20, 0.7294117647);
+  color: whitesmoke;
+  position: fixed;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  padding: 5px;
+  z-index: 100;
+}
+
 .navbar-container {
   height: 100vh;
-  background-color: #000814;
+  position: sticky;
+  background-color: rgba(0, 8, 20, 0.7294117647);
   border-right: 1px solid #e5e5e5;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
 }
 
 .icons-container {
@@ -19,10 +31,52 @@
   align-items: center;
   margin: 10px 5px 20px 5px;
   cursor: pointer;
-  color: #d3aac0;
+  color: #f381be;
+}
+.icons-container i svg {
+  height: 5vh;
 }
 .icons-container i span {
   font-size: 10px;
   font-style: normal;
   color: rgba(241, 95, 156, 0.7647058824);
+}
+
+@media screen and (min-width: 1440px) {
+  .icons-container i {
+    margin-bottom: 5vh;
+  }
+  .icons-container i svg {
+    font-size: 15vh;
+  }
+  .icons-container i span {
+    font-size: 1.8vh;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .icons-container i {
+    margin-bottom: 3vh;
+  }
+  .icons-container i svg {
+    font-size: 15vh;
+  }
+  .icons-container i span {
+    font-size: 1.5vh;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbar-responsive-container {
+    display: flex;
+  }
+  .navbar-container {
+    position: absolute;
+    z-index: 99;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-100%);
+  }
+  .visible {
+    visibility: visible;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

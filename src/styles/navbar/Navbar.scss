@@ -1,11 +1,22 @@
 @import "../variables/MainColors.scss";
 
+.navbar-responsive-container{
+    display: none;
+    background-color: #000814ba;
+    color: whitesmoke;
+    position: fixed;
+    height: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+    z-index: 100;
+}
+
 .navbar-container{
     height: 100vh;
-    background-color: $black-color;
+    position: sticky;
+    background-color: #000814ba;
     border-right: 1px solid $gray-color;
     font-family: $main-font; 
-    font-size: 10px;
 }
 
 .icons-container{
@@ -18,12 +29,64 @@
         align-items: center;
         margin: 10px 5px 20px 5px;
         cursor: pointer;     
-        color: #d3aac0;   
+        color: #f381be;  
+        svg{
+            height: 5vh;
+        }
         span{
             font-size: 10px;
             font-style: normal;
             color: #f15f9cc3;
         }     
 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .icons-container{
+        i{
+            margin-bottom: 5vh;
+            svg{
+                font-size: 15vh;
+            }
+    
+            span{
+                font-size: 1.8vh;
+            }
+        }
+        } 
+}
+
+@media screen and (max-width: 1024px) {
+    .icons-container{
+        i{
+            margin-bottom: 3vh;
+            svg{
+                font-size: 15vh;
+            }
+    
+            span{
+                font-size: 1.5vh;
+            }
+        }
+        } 
+}
+
+@media screen and (max-width:425px)
+{
+    .navbar-responsive-container{
+        display: flex;
+    }
+    .navbar-container{
+        position: absolute;
+        z-index: 99;
+        transition: transform 0.3s ease-out;
+        transform: translateX(-100%);
+    }
+
+    .visible{
+        visibility: visible;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
     }
 }

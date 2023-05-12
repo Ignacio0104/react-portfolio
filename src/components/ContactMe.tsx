@@ -41,7 +41,7 @@ const ContactMe = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState({ error: false, description: "" });
-  const [succes, setSuccess] = useState(true);
+  const [succes, setSuccess] = useState(false);
 
   const handleChange = (field: string, value: string) => {
     setMailInformation({ ...mailInformation, [field]: value });
