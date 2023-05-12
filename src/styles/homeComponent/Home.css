@@ -55,6 +55,8 @@
 }
 
 .btn-cv-container {
+  display: flex;
+  align-items: center;
   margin-right: 5vw;
   cursor: pointer;
   width: -moz-fit-content;
@@ -162,15 +164,15 @@
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   .information-container {
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
   }
   .information-container .image-container img {
-    height: 30vh;
-    width: 40vw;
+    height: 35vh;
+    width: 50vw;
     margin-right: 0px;
   }
   .information-container .description-container {
@@ -199,6 +201,70 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 425px) {
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .information-container .image-container img {
+    height: 35vh;
+    width: 40vw;
+    margin-right: 0px;
+  }
+  .information-container .description-container {
+    margin-top: 3vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .information-container .description-text {
+    font-size: 2vh;
+  }
+  .information-container .description-title {
+    font-size: 5vh;
+  }
+  .information-container .button-container {
+    margin: 3vh auto auto auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .information-container .btn-cv-container {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .image-container img {
+    width: 22vw;
+    height: 40vh;
+  }
+  .description-container p {
+    font-size: 2vh;
+  }
+  .description-container h3 {
+    font-size: 5vh;
+  }
+  .btn-linkedin {
+    font-weight: 600;
+    font-size: 2.5vh;
+    padding: 1vh 2vw;
+  }
+  .btn-linkedin svg {
+    font-size: 3.5vh;
+  }
+  .btn-cv {
+    font-size: 2.4vh;
+  }
+  .btn-cv-container {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .home-container {
     width: 90%;
@@ -222,7 +288,7 @@
   }
   .btn-linkedin {
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 2.5vh;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -237,28 +303,5 @@
   .image-container img {
     width: 22vw;
     height: 40vh;
-  }
-}
-@media screen and (max-width: 768px) {
-  .image-container img {
-    width: 22vw;
-    height: 40vh;
-  }
-  .description-container p {
-    font-size: 2vh;
-  }
-  .description-container h3 {
-    font-size: 5vh;
-  }
-  .btn-linkedin {
-    font-weight: 600;
-    font-size: 2.5vh;
-    padding: 1vh 2vw;
-  }
-  .btn-linkedin svg {
-    font-size: 3.5vh;
-  }
-  .btn-cv {
-    font-size: 2.4vh;
   }
 }/*# sourceMappingURL=Home.css.map */
