@@ -12,9 +12,9 @@ const Home = () => {
             <img src={ProfilePic} alt="profile"></img>
           </div>
           <div className="description-container">
-            <p>Hello, I'm </p>
-            <h3>Ignacio Smirlian</h3>
-            <p>
+            <p className="description-text">Hello, I'm </p>
+            <h3 className="description-title">Ignacio Smirlian</h3>
+            <p className="description-text">
               A passionate <span>Frontend developer </span>dedicated to creating
               interactive web experiences, skilled in <span>HTML</span>,
               <span> CSS</span>,<span> JavaScript</span>, and

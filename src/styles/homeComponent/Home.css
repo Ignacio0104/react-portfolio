@@ -13,7 +13,6 @@
   width: 70vw;
   margin: auto;
   align-items: center;
-  padding-top: 10vh;
   animation: fade-in 0.5s ease-out forwards;
   margin-right: 10vh;
 }
@@ -38,13 +37,16 @@
   display: flex;
   flex-direction: column;
 }
-.description-container h3 {
+.description-container .description-title {
   font-family: "Caveat", cursive;
-  font-size: 8vh;
+  font-size: 10vh;
   -webkit-margin-before: 1vh;
           margin-block-start: 1vh;
   -webkit-margin-after: 1vh;
           margin-block-end: 1vh;
+}
+.description-container .description-text {
+  font-size: 2.5vh;
 }
 
 .button-container {
@@ -160,6 +162,43 @@
     transform: translateY(0);
   }
 }
+@media screen and (max-width: 320px) {
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  .information-container .image-container img {
+    height: 30vh;
+    width: 40vw;
+    margin-right: 0px;
+  }
+  .information-container .description-container {
+    margin-top: 3vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .information-container .description-text {
+    font-size: 2vh;
+  }
+  .information-container .description-title {
+    font-size: 4vh;
+  }
+  .information-container .button-container {
+    margin: 3vh auto auto auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .information-container .btn-cv-container {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1440px) {
   .home-container {
     width: 90%;
@@ -189,19 +228,18 @@
 @media screen and (min-width: 1600px) {
   .information-container {
     padding-top: 0px;
-    font-size: 2vh;
   }
   .image-container img {
     width: 20vw;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .image-container img {
     width: 22vw;
     height: 40vh;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .image-container img {
     width: 22vw;
     height: 40vh;

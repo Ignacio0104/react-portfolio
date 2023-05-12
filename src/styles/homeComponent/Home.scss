@@ -12,7 +12,6 @@
     width: 70vw;
     margin: auto;
     align-items: center;
-    padding-top: 10vh;
     animation: fade-in 0.5s ease-out forwards;  
     margin-right: 10vh;
     span{
@@ -37,11 +36,14 @@
     color: $black-color;
     display: flex;
     flex-direction: column;
-    h3{
+    .description-title{
         font-family: $name-font;
-        font-size: 8vh;
+        font-size: 10vh;
         margin-block-start: 1vh;
         margin-block-end: 1vh;
+    }
+    .description-text{
+        font-size: 2.5vh;
     }
 }
 
@@ -106,6 +108,54 @@ to {
 }
 }
 
+@media screen and (max-width:320px){
+    .information-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10vh;
+
+
+        .image-container{
+            img{
+                height: 30vh;
+                width: 40vw;
+                margin-right: 0px;
+            }
+        }
+
+        .description-container{
+            margin-top: 3vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.475);
+            color: white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .description-text{
+            font-size: 2vh;
+        }
+
+        .description-title{
+            font-size: 4vh;
+        }
+
+        .button-container{
+            margin: 3vh auto auto auto;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .btn-cv-container{
+            margin-right: 0px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
+
 @media screen and (min-width: 1440px){
     .home-container{
         width: 90%;
@@ -141,7 +191,6 @@ to {
 
     .information-container{
         padding-top: 0px;
-        font-size: 2vh;
     }
 
     .image-container{
@@ -149,9 +198,10 @@ to {
             width: 20vw;
         }   
     }
+
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
     .image-container{
         img{
             width: 22vw;
@@ -160,7 +210,7 @@ to {
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
     .image-container{
         img{
             width: 22vw;
