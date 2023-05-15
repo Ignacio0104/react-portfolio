@@ -1,5 +1,6 @@
 @import "../variables/MainColors.scss";
 
+
 .about-container{
     display: flex;
     flex-direction: column;
@@ -20,10 +21,74 @@
 
 .about-info-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
+@media only screen and (max-width: 425px) {
+ .about-container{
+    display: flex;
+    flex-direction: column;
+    animation: fade-in-about 0.5s ease-out forwards; 
+    width: 100%;
+ } 
+    .about-description-container{
+        margin: 3vh 4vw 0 4vw;
+        font-family: $main-font;
+        color: $black-color;
+        width: 92%;
+    }
+
+    .about-description-text{
+        font-size: 2vh;
+    }
+    .about-info-container{
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-info-container{
+        display: flex;
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        animation: fade-in-about 0.5s ease-out forwards;  
+        width: 90%;
+    }
+    
+    .about-description-container{
+        margin: 5vh 10vw 5vh 10vw;
+        width: 70vw;
+    } 
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-container{
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .about-container{
+        h2{
+            font-size: 5vh;
+        }
+        p{
+            font-size: 2.5vh;
+        }
+    }
+}
 
 @keyframes fade-in-about {
     from {

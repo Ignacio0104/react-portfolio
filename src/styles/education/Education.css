@@ -61,4 +61,259 @@
   transition: all 0.3s ease-in;
   background-image: url("../../assets/images/button-background.png");
   color: wheat;
+}
+
+@media screen and (max-width: 375px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+  .education-container h2 {
+    font-size: 3vh;
+  }
+  .education-container h5 {
+    font-size: 2vh;
+  }
+  .education-container .list-item-uni p {
+    font-size: 1.5vh;
+  }
+  .certificates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .certificates-container .certificates-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    font-weight: bold;
+    background-color: rgba(181, 175, 175, 0.607);
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 2px;
+  }
+  .certificates-container .certificates-links svg {
+    font-size: 6vw;
+  }
+  .more-btn {
+    margin-top: 1vh;
+    padding: 3px 0px;
+    font-size: 10px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 425px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+  }
+  .education-container h2 {
+    font-size: 3.5vh;
+  }
+  .education-container h5 {
+    font-size: 2vh;
+  }
+  .education-container .list-item-uni p {
+    font-size: 1.5vh;
+  }
+  .certificates-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .certificates-container .certificates-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5vw;
+    font-weight: bold;
+    background-color: rgba(181, 175, 175, 0.607);
+    padding: 5px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 2px;
+  }
+  .more-btn {
+    margin-top: 1vh;
+    padding: 3px 0px;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .education-container {
+    width: 35vw;
+    padding: 0vh 2vw;
+  }
+  .education-container h2 {
+    font-size: 4vh;
+  }
+  .education-container h5 {
+    font-size: 2.5vh;
+  }
+  .education-container .list-item-uni p {
+    font-size: 2vh;
+  }
+  .education-container .certificates-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .education-container .certificates-container .certificates-links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5vw;
+    width: 80%;
+    margin: 2px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 2vw;
+    width: 35vw;
+  }
+  .education-container h5 {
+    font-size: 15px;
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+            margin-block-end: 0em;
+  }
+  .education-container .list-item-uni p {
+    font-size: 12px;
+  }
+  .certificates-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .certificates-container .certificates-links {
+    display: flex;
+    font-size: 2vh;
+    background-color: rgba(181, 175, 175, 0.607);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .certificates-container .certificates-links:hover {
+    color: rgba(248, 215, 28, 0.893);
+  }
+  .more-btn {
+    margin-top: 3vh;
+    padding: 5px 0px;
+    letter-spacing: 1.5px;
+    width: 70%;
+    font-size: 15px;
+  }
+  .more-btn:hover {
+    transition: all 0.3s ease-in;
+    background-image: url("../../assets/images/button-background.png");
+    color: wheat;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 2vw;
+    width: 35vw;
+  }
+  .education-container h2 {
+    font-size: 4vh;
+  }
+  .education-container h5 {
+    font-size: 20px;
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+            margin-block-end: 0em;
+  }
+  .education-container .list-item-uni p {
+    font-size: 15px;
+  }
+  .certificates-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .certificates-container .certificates-links {
+    display: flex;
+    font-size: 2.5vh;
+    background-color: rgba(181, 175, 175, 0.607);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .certificates-container .certificates-links:hover {
+    color: rgba(248, 215, 28, 0.893);
+  }
+  .more-btn {
+    margin-top: 2vh;
+    padding: 5px 0px;
+    letter-spacing: 1.5px;
+    width: 90%;
+    font-size: 20px;
+  }
+  .more-btn:hover {
+    transition: all 0.3s ease-in;
+    background-image: url("../../assets/images/button-background.png");
+    color: wheat;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0vh 2vw;
+    width: 35vw;
+  }
+  .education-container h2 {
+    font-size: 4vh;
+  }
+  .education-container h5 {
+    font-size: 3vh;
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0em;
+            margin-block-end: 0em;
+  }
+  .education-container .list-item-uni p {
+    font-size: 2vh;
+  }
+  .certificates-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .certificates-container .certificates-links {
+    display: flex;
+    font-size: 2.5vh;
+    background-color: rgba(181, 175, 175, 0.607);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .certificates-container .certificates-links svg {
+    font-size: 3vh;
+  }
+  .certificates-container .certificates-links:hover {
+    color: rgba(248, 215, 28, 0.893);
+  }
+  .more-btn {
+    margin-top: 2vh;
+    padding: 5px 0px;
+    letter-spacing: 1.5px;
+    width: 90%;
+    font-size: 3.5vh;
+  }
+  .more-btn:hover {
+    transition: all 0.3s ease-in;
+    background-image: url("../../assets/images/button-background.png");
+    color: wheat;
+  }
 }/*# sourceMappingURL=Education.css.map */
