@@ -45,7 +45,7 @@
 }
 
 .more-btn {
-  margin-top: 5vh;
+  margin-top: 4vh;
   padding: 5px 0px;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -196,7 +196,7 @@
   }
   .certificates-container .certificates-links {
     display: flex;
-    font-size: 2vh;
+    font-size: 2.5vh;
     background-color: rgba(181, 175, 175, 0.607);
     padding: 5px;
     border-radius: 10px;
@@ -206,7 +206,7 @@
     color: rgba(248, 215, 28, 0.893);
   }
   .more-btn {
-    margin-top: 3vh;
+    margin-top: 1vh;
     padding: 5px 0px;
     letter-spacing: 1.5px;
     width: 70%;

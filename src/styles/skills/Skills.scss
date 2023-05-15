@@ -111,6 +111,9 @@
         display: grid;
         grid-template-columns: repeat(3,auto);
         padding: 1vw;
+        p{
+            font-size: 2.5vh;
+        }
     }
 }
 

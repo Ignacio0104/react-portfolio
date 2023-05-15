@@ -1,6 +1,6 @@
 @import "../variables/MainColors.scss";
 .home-container{
-    width: 100%;
+    width: 90%;
     height: 100vh;
     overflow: hidden;
     font-family: $main-font; 
@@ -111,6 +111,9 @@ to {
 }
 
 @media screen and (max-width:375px) {
+    .home-container{
+        width: 100%;
+    }
     .btn-cv{
         font-size: 2vh;
     }
@@ -128,6 +131,9 @@ to {
 }
 
 @media screen and (max-width:425px){
+    .home-container{
+        width: 100%;
+    }
     .information-container{
         display: flex;
         flex-direction: column;
@@ -224,7 +230,7 @@ to {
 @media screen and (min-width: 768px){
     .image-container{
         img{
-            width: 22vw;
+            width: 20vw;
             height: 40vh;
         }   
     }
@@ -266,6 +272,7 @@ to {
         display: flex;
         align-items: center;
         margin: 0px;
+
     }
 
     .information-container{
@@ -292,9 +299,10 @@ to {
 }
 
 @media screen and (min-width: 1600px){
-
+    
     .information-container{
         padding-top: 0px;
+        
     }
 
     .image-container{
