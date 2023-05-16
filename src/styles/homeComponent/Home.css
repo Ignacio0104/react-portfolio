@@ -209,7 +209,6 @@
 @media screen and (max-width: 425px) {
   .home-container {
     width: 100vw;
-    overflow: scroll;
     margin: 0px;
     display: flex;
     justify-content: center;

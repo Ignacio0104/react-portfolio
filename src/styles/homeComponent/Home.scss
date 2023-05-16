@@ -107,6 +107,7 @@
 }
 
 @media screen and (max-width: 1440px){
+
     .image-container{
         img{
             height: 50%;
@@ -132,7 +133,6 @@
 }
 
 @media screen and (max-width: 1024px){
-
     .description-container{
         .description-title{
             font-size: 40px;
@@ -181,7 +181,6 @@
 @media screen and (max-width: 425px){
     .home-container{
         width: 100vw;
-        overflow: scroll;
         margin: 0px;
         display: flex;
         justify-content: center;

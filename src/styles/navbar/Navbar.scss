@@ -1,85 +1,107 @@
 @import "../variables/MainColors.scss";
 
-.navbar-responsive-container{
-    display: none;
-    background-color: #000814ba;
-    color: whitesmoke;
-    position: fixed;
-    height: fit-content;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 5px;
-    z-index: 100;
-    svg{
-        font-size: 40px;
+@media screen and (max-width: 2560px)
+{
+    .navbar-responsive-container{
+        display: none;
     }
-}
-
-.navbar-container{
-    height: 100vh;
-    position: sticky;
-    background-color: #000814ba;
-    border-right: 1px solid $gray-color;
-    font-family: $main-font; 
-}
-
-.icons-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20vh 0vh;
-    i{
+    
+    .navbar-container{
+        height: 100vh;
+        top:0;
+        position: sticky;
+        background-color: #000814ba;
+        border-right: 1px solid $gray-color;
+        font-family: $main-font; 
+    }
+    
+    .icons-container{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 10px 5px 20px 5px;
-        cursor: pointer;     
-        color: #f381be;  
-        svg{
-            height: 5vh;
+        padding: 20vh 0vh;
+        i{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 25px 50px 25px;
+            cursor: pointer;     
+            color: #f381be;  
+            svg{
+                font-size: 40px;
+            }
+            span{
+                font-size: 10px;
+                font-style: normal;
+                color: #f15f9cc3;
+            }     
+    
         }
-        span{
-            font-size: 10px;
-            font-style: normal;
-            color: #f15f9cc3;
-        }     
-
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px){
+    
     .icons-container{
         i{
-            margin-bottom: 5vh;
+            margin: 20px 25px 30px 25px;
             svg{
-                font-size: 15vh;
+                font-size: 30px;
             }
-    
             span{
-                font-size: 1.8vh;
-            }
+                font-size: 10px;
+            }     
+    
         }
-        } 
+    }
 }
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1024px){
+    
     .icons-container{
         i{
-            margin-bottom: 3vh;
+            margin: 15px 15px 20px 15px;
             svg{
-                font-size: 15vh;
+                font-size: 25px;
             }
-    
             span{
-                font-size: 1.5vh;
-            }
+                font-size: 8px;
+            }     
+    
         }
-        } 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .icons-container{
+        i{
+            margin: 10px 15px 15px 15px;
+            svg{
+                font-size: 20px;
+            }
+            span{
+                font-size: 5px;
+            }     
+    
+        }
+    }
 }
 
 @media screen and (max-width:425px)
 {
     .navbar-responsive-container{
         display: flex;
+        background-color: #000814ba;
+        color: whitesmoke;
+        position: fixed;
+        height: fit-content;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 5px;
+        z-index: 100;
+        svg{
+            font-size: 20px;
+        }
     }
     .navbar-container{
         position: absolute;
@@ -92,5 +114,9 @@
         visibility: visible;
         transform: translateX(0);
         transition: transform 0.3s ease-out;
+    }
+
+    .icons-container{
+        padding: 20vh 0vh;
     }
 }
