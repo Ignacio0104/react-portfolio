@@ -8,7 +8,7 @@
   top: 0;
   z-index: 1000;
   background: rgb(131, 58, 180);
-  background: linear-gradient(144deg, rgb(131, 58, 180) 0%, rgb(253, 39, 29) 64%, rgb(252, 176, 69) 100%);
+  background: linear-gradient(144deg, rgb(131, 58, 180) 0%, rgb(253, 39, 29) 64%, rgb(252, 69, 246) 100%);
   border: 1px solid whitesmoke;
   border-radius: 10px;
   display: grid;
@@ -43,10 +43,10 @@
   display: flex;
 }
 .certificate-container h2 {
-  font-size: 12px;
+  font-size: 2.5vh;
 }
 .certificate-container p {
-  font-size: 10px;
+  font-size: 1.5vh;
 }
 .certificate-container h2, .certificate-container p {
   -webkit-margin-before: 0px;
@@ -77,10 +77,35 @@
 .certificate-container .certificate-skills-container {
   display: flex;
 }
-.certificate-container .certificate-skills-container p {
-  font-size: 10px;
-}
 
+@media screen and (max-width: 425px) {
+  .main-certificates-container {
+    display: grid;
+    grid-template-columns: repeat(1, 95vw);
+    height: 85vh;
+    overflow: scroll;
+  }
+  .main-certificates-container h2 {
+    font-size: 15px;
+  }
+  .main-certificates-container p {
+    font-size: 10px;
+  }
+  .certificate-skills-container p {
+    flex-direction: row;
+    padding-left: 2vw;
+    font-size: 10px;
+  }
+  .cancel-btn {
+    right: 1vw;
+    margin-top: 1.5vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .certificate-skills-container p {
+    font-size: 1.5vh;
+  }
+}
 @keyframes slide-in {
   from {
     transform: translateY(-10%);

@@ -1,5 +1,6 @@
 @import "../variables/MainColors.scss";
 
+
 .project-container{
     margin: auto;
     margin-top: 2vh;
@@ -16,22 +17,23 @@
     font-family: $main-font;
     color: $yellow;
     img{
-        height: 50vh;
-        margin-left: 15vw;
-        margin-top: 10px;
+        height: 50%;
+        width: 50%;
+        margin-top: 20px;
+        margin-left: 25%;
         border-radius: 20px;  
     }
-
 }
 
 .project-text-container{
-    padding: 1px 10px;
+    padding: 1px 30px;
     h3{
         margin-block-start: 0;
         margin-block-end: 0;
+        font-size: 45px;
     }
     .project-description{
-        font-size: 2.5vh;
+        font-size: 35px;
     }
 }
 
@@ -39,7 +41,7 @@
     display: grid;
     grid-template-columns: repeat(2,auto);
     p{
-        font-size: 2vh;
+        font-size: 30px;
     }
     a{
         text-decoration: none;
@@ -47,6 +49,112 @@
         color: rgb(244, 8, 224);
         letter-spacing: 1px;
     }
+}
+
+
+@media screen and (max-width:1440px) and (min-height:800px) {
+    .project-text-container{
+        h3{
+
+            font-size: 30px
+        }
+        .project-description{
+            font-size: 20px;
+        }
+    }
+
+    .project-details-container{
+        p{
+            font-size: 15px;
+        }
+    } 
+}
+
+@media screen and (max-width:1440px){
+    .project-text-container{
+        h3{
+
+            font-size: 20px
+        }
+        .project-description{
+            font-size: 15px;
+        }
+    }
+
+    .project-details-container{
+        p{
+            font-size: 12px;
+        }
+    } 
+}
+
+@media screen and (max-width:1024px) {
+    .project-container{
+        img{
+            width: 60%;
+            margin-left: 20%;
+        }
+    }
+    .project-text-container{
+        h3{
+            font-size: 25px
+        }
+        .project-description{
+            font-size: 15px;
+        }
+    }
+
+    .project-details-container{
+        p{
+            font-size: 10px;
+        }
+    } 
+}
+
+@media screen and (max-width:768px) {
+    .project-text-container{
+        h3{
+            font-size: 20px
+        }
+        .project-description{
+            font-size: 10px;
+        }
+    }
+
+    .project-details-container{
+        p{
+            font-size: 8px;
+        }
+    } 
+}
+
+@media screen and (max-width:425px) {
+    .project-container{
+        height: 60%;
+        margin-top: 25%;
+        img{
+            width: 60%;
+            height: 25%;
+            margin-left: 20%;
+        }
+    }
+    .project-text-container{
+        h3{
+            font-size: 15px
+        }
+        .project-description{
+            font-size: 8px;
+        }
+    }
+
+    .project-details-container{
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(1,auto);
+        p{
+            font-size: 7px;
+        }     
+    } 
 }
 
 

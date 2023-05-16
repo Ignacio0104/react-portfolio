@@ -14,8 +14,6 @@
         margin-left: 5vh;
     }
     font-family: $main-font;
-
-    margin-right: 30px;
 }
 
 .skills-container{
@@ -56,27 +54,31 @@
     }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 390px) {
     .skills-main-container{
-        width: 45vw;
+        margin: auto;
+        width: 90%;
         .skills-title{
-            margin-left: 5vh;
-            font-size: 3.5vh;
+            margin-left: 10px;
+            font-size: 20px;
+            margin-block-start: 0.83em;
+            margin-block-end: 0;
         }
         font-family: $main-font;
     }
     .skills-container{
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(3,auto);
         padding: 1vw;
     }
 
     .skill-item{
         display: flex;
         font-size: 12px;
+        height: 35px;
         justify-content: space-around;
         img{
-            height: 4vh;
+            height: 20px
         }
     }
 }

@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  margin-right: 30px;
 }
 .skills-main-container .skills-title {
   margin-left: 5vh;
@@ -52,27 +51,33 @@
     height: 3vh;
   }
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 390px) {
   .skills-main-container {
-    width: 45vw;
+    margin: auto;
+    width: 90%;
     font-family: "Poppins", sans-serif;
   }
   .skills-main-container .skills-title {
-    margin-left: 5vh;
-    font-size: 3.5vh;
+    margin-left: 10px;
+    font-size: 20px;
+    -webkit-margin-before: 0.83em;
+            margin-block-start: 0.83em;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
   }
   .skills-container {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(3, auto);
     padding: 1vw;
   }
   .skill-item {
     display: flex;
     font-size: 12px;
+    height: 35px;
     justify-content: space-around;
   }
   .skill-item img {
-    height: 4vh;
+    height: 20px;
   }
 }
 @media only screen and (min-width: 768px) {

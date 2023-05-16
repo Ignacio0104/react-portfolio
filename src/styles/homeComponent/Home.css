@@ -1,159 +1,276 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
-.home-container {
-  width: 90%;
-  height: 100vh;
-  overflow: hidden;
-  font-family: "Poppins", sans-serif;
-  display: flex;
+@media screen and (max-width: 2560px) {
+  .home-container {
+    width: 90%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+  }
+  .information-container {
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    align-items: center;
+    animation: fade-in 0.5s ease-out forwards;
+    margin-right: 10vh;
+  }
+  .information-container span {
+    font-weight: bold;
+  }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .image-container img {
+    height: 50%;
+    width: 23vw;
+    z-index: 100;
+    border-radius: 50%;
+    margin-right: 40px;
+    border: 2px solid #e5e5e5;
+  }
+  .description-container {
+    color: #000814;
+    display: flex;
+    flex-direction: column;
+  }
+  .description-container .description-title {
+    font-family: "Caveat", cursive;
+    font-size: 120px;
+    -webkit-margin-before: 1vh;
+            margin-block-start: 1vh;
+    -webkit-margin-after: 1vh;
+            margin-block-end: 1vh;
+  }
+  .description-container .description-text {
+    font-size: 35px;
+  }
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+  }
+  .btn-cv-container {
+    display: flex;
+    align-items: center;
+    margin-right: 5vw;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 40px;
+  }
+  .btn-cv-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 246, 249, 0.5843137255);
+    z-index: -2;
+  }
+  .btn-cv-container:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(151, 168, 173, 0.5843137255);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .btn-cv-container:hover {
+    color: #fff;
+  }
+  .btn-cv-container:hover:before {
+    width: 100%;
+  }
+  .btn-cv {
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    background: linear-gradient(284deg, rgba(214, 59, 3, 0.659) 0%, rgba(247, 37, 247, 0.721) 37%, rgba(130, 3, 62, 0.628) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .btn-linkedin {
+    background-color: transparent;
+    display: flex;
+    font-weight: 600;
+    font-size: 3vh;
+    align-items: center;
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 1vh 2vw;
+    border-radius: 20px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+  }
+  .btn-linkedin:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(237, 246, 249, 0.5843137255);
+    z-index: -2;
+  }
+  .btn-linkedin:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(151, 168, 173, 0.5843137255);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .btn-linkedin:hover {
+    color: #fff;
+  }
+  .btn-linkedin:hover:before {
+    width: 100%;
+  }
+  .btn-linkedin svg {
+    margin-left: 0.5vw;
+    color: #0072b1;
+    font-size: 50px;
+  }
 }
-
-.information-container {
-  display: flex;
-  width: 70vw;
-  margin: auto;
-  align-items: center;
-  animation: fade-in 0.5s ease-out forwards;
-  margin-right: 10vh;
+@media screen and (max-width: 1440px) {
+  .image-container img {
+    height: 50%;
+  }
+  .description-container .description-title {
+    font-size: 50px;
+  }
+  .description-container .description-text {
+    font-size: 20px;
+  }
+  .btn-cv {
+    font-size: 20px;
+  }
+  .btn-linkedin svg {
+    font-size: 25px;
+  }
 }
-.information-container span {
-  font-weight: bold;
+@media screen and (max-width: 1024px) {
+  .description-container .description-title {
+    font-size: 40px;
+  }
+  .description-container .description-text {
+    font-size: 15px;
+  }
+  .btn-cv {
+    font-size: 15px;
+  }
+  .btn-linkedin {
+    font-size: 15px;
+  }
+  .btn-linkedin svg {
+    font-size: 20px;
+  }
 }
-
-.image-container {
-  display: flex;
+@media screen and (max-width: 768px) {
+  .description-container .description-title {
+    font-size: 30px;
+  }
+  .description-container .description-text {
+    font-size: 10px;
+  }
+  .btn-cv-container {
+    padding: 8px 20px;
+  }
+  .btn-cv {
+    font-size: 10px;
+  }
+  .btn-linkedin {
+    font-size: 10px;
+  }
+  .btn-linkedin svg {
+    font-size: 15px;
+  }
 }
-.image-container img {
-  height: 50vh;
-  width: 23vw;
-  z-index: 100;
-  border-radius: 50%;
-  margin-right: 40px;
-  border: 2px solid #e5e5e5;
+@media screen and (max-width: 425px) {
+  .home-container {
+    width: 100vw;
+    overflow: scroll;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+  }
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .information-container .image-container {
+    height: 30vh;
+  }
+  .information-container .image-container img {
+    width: 90%;
+    height: 90%;
+    margin-right: 0px;
+  }
+  .information-container .description-container {
+    margin-top: 3vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.475);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  .information-container .description-text {
+    font-size: 10px;
+  }
+  .information-container .description-title {
+    font-size: 25px;
+  }
+  .information-container .button-container {
+    margin: 3vh auto auto auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .information-container .btn-cv-container {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+  }
+  .information-container .btn-cv {
+    font-size: 12px;
+  }
+  .information-container .btn-linkedin {
+    font-size: 12px;
+  }
+  .information-container .btn-linkedin svg {
+    font-size: 18px;
+  }
 }
-
-.description-container {
-  color: #000814;
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 320px) {
+  .description-text {
+    font-size: 8px;
+  }
+  .description-title {
+    font-size: 25px;
+  }
 }
-.description-container .description-title {
-  font-family: "Caveat", cursive;
-  font-size: 10vh;
-  -webkit-margin-before: 1vh;
-          margin-block-start: 1vh;
-  -webkit-margin-after: 1vh;
-          margin-block-end: 1vh;
-}
-.description-container .description-text {
-  font-size: 2.5vh;
-}
-
-.button-container {
-  margin-top: 20px;
-  display: flex;
-}
-
-.btn-cv-container {
-  display: flex;
-  align-items: center;
-  margin-right: 5vw;
-  cursor: pointer;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 10px;
-  border-radius: 20px;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-.btn-cv-container:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(237, 246, 249, 0.5843137255);
-  z-index: -2;
-}
-.btn-cv-container:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgba(151, 168, 173, 0.5843137255);
-  transition: all 0.3s;
-  z-index: -1;
-}
-.btn-cv-container:hover {
-  color: #fff;
-}
-.btn-cv-container:hover:before {
-  width: 100%;
-}
-
-.btn-cv {
-  border: none;
-  font-weight: bold;
-  text-decoration: none;
-  background: linear-gradient(284deg, rgba(214, 59, 3, 0.659) 0%, rgba(247, 37, 247, 0.721) 37%, rgba(130, 3, 62, 0.628) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn-linkedin {
-  background-color: transparent;
-  display: flex;
-  font-weight: 600;
-  font-size: 3vh;
-  align-items: center;
-  cursor: pointer;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 1vh 2vw;
-  border-radius: 20px;
-  transition: all 0.3s;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border: none;
-}
-.btn-linkedin:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(237, 246, 249, 0.5843137255);
-  z-index: -2;
-}
-.btn-linkedin:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: rgba(151, 168, 173, 0.5843137255);
-  transition: all 0.3s;
-  z-index: -1;
-}
-.btn-linkedin:hover {
-  color: #fff;
-}
-.btn-linkedin:hover:before {
-  width: 100%;
-}
-.btn-linkedin * {
-  margin-left: 0.5vw;
-  color: #0072b1;
-}
-
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -162,167 +279,5 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@media screen and (max-width: 375px) {
-  .home-container {
-    width: 100%;
-  }
-  .btn-cv {
-    font-size: 2vh;
-  }
-  .btn-linkedin {
-    font-size: 2.5vh;
-  }
-  .btn-linkedin svg {
-    font-size: 4vh;
-  }
-  .profile-pic {
-    width: 200vw;
-  }
-}
-@media screen and (max-width: 425px) {
-  .home-container {
-    width: 100%;
-  }
-  .information-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10vh;
-  }
-  .information-container .image-container img {
-    height: 35vh;
-    width: 50vw;
-    margin-right: 0px;
-  }
-  .information-container .description-container {
-    margin-top: 3vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.475);
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-  }
-  .information-container .description-text {
-    font-size: 2vh;
-  }
-  .information-container .description-title {
-    font-size: 4vh;
-  }
-  .information-container .button-container {
-    margin: 3vh auto auto auto;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .information-container .btn-cv-container {
-    margin-right: 0px;
-    display: flex;
-    align-items: center;
-    font-size: 2.5vh;
-  }
-}
-@media screen and (max-width: 425px) {
-  .information-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 10vh;
-  }
-  .information-container .image-container img {
-    height: 35vh;
-    width: 40vw;
-    margin-right: 0px;
-  }
-  .information-container .description-container {
-    margin-top: 3vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.475);
-    color: white;
-    padding: 10px;
-    border-radius: 20px;
-  }
-  .information-container .description-text {
-    font-size: 2vh;
-  }
-  .information-container .description-title {
-    font-size: 5vh;
-  }
-  .information-container .button-container {
-    margin: 3vh auto auto auto;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .information-container .btn-cv-container {
-    margin-right: 0px;
-    display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .image-container img {
-    width: 20vw;
-    height: 40vh;
-  }
-  .description-container p {
-    font-size: 2vh;
-  }
-  .description-container h3 {
-    font-size: 5vh;
-  }
-  .btn-linkedin {
-    font-weight: 600;
-    font-size: 2.5vh;
-    padding: 1vh 2vw;
-  }
-  .btn-linkedin svg {
-    font-size: 3.5vh;
-  }
-  .btn-cv {
-    font-size: 2.4vh;
-  }
-  .btn-cv-container {
-    display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .home-container {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    margin: 0px;
-  }
-  .information-container {
-    padding-top: 0px;
-  }
-  .image-container {
-    display: flex;
-  }
-  .image-container img {
-    height: 40vh;
-    width: 22vw;
-    z-index: 100;
-    border-radius: 50%;
-    margin-right: 40px;
-    border: 2px solid #e5e5e5;
-  }
-  .btn-linkedin {
-    font-weight: 600;
-    font-size: 2.5vh;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .information-container {
-    padding-top: 0px;
-  }
-  .image-container img {
-    width: 20vw;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .image-container img {
-    width: 22vw;
-    height: 40vh;
   }
 }/*# sourceMappingURL=Home.css.map */

@@ -8,7 +8,7 @@
     top: 0;
     z-index: 1000;
     background: rgb(131,58,180);
-    background: linear-gradient(144deg, rgba(131,58,180,1) 0%, rgba(253,39,29,1) 64%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(144deg, rgba(131,58,180,1) 0%, rgba(253,39,29,1) 64%, rgb(252, 69, 246) 100%);
     border: 1px solid whitesmoke;
     border-radius: 10px;
     display: grid;
@@ -42,11 +42,11 @@
 .certificate-container{
     display: flex;
     h2{
-        font-size: 12px;
+        font-size: 2.5vh;
     }
 
     p{
-        font-size: 10px;
+        font-size: 1.5vh;
     }
     h2,p{
     
@@ -77,10 +77,46 @@
 
     .certificate-skills-container{
         display: flex;
+  
+    }
+}
+
+@media screen and (max-width:425px) {
+    .main-certificates-container{
+        display: grid;
+        grid-template-columns: repeat(1,95vw);
+        height: 85vh;
+        overflow: scroll;
+        h2{
+            font-size: 15px;
+        }
+    
         p{
             font-size: 10px;
         }
     }
+    
+    .certificate-skills-container{
+        p{
+            flex-direction: row;
+            padding-left: 2vw;
+            font-size: 10px;
+        }
+    }
+
+    .cancel-btn{
+        right: 1vw;
+        margin-top: 1.5vh;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    .certificate-skills-container{
+        p{
+            font-size: 1.5vh;
+        }
+    } 
 }
 
 

@@ -3,9 +3,6 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    width: 10px;
-    margin: auto;
-    height: 10px;
     animation: fade-in-portfolio 0.5s ease-out forwards; 
 }
 
@@ -13,6 +10,11 @@
     width: 90vw;
 }
 
+@media screen and (max-width:440px) and (min-height:800px) {
+    .swiper{
+       height: 100vh
+    }
+}
 
 @keyframes fade-in-portfolio {
     from {

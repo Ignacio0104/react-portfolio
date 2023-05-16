@@ -116,7 +116,7 @@ const Certificates = ({ toogleCertificate }: ICertificateProps) => {
         onClick={() => toogleCertificate(false)}
       />
       {certificatesList.map((certificate) => (
-        <div className="certificate-container">
+        <div key={certificate.title} className="certificate-container">
           <img
             className="certificate-pic"
             src={certificate.picture}
@@ -136,7 +136,7 @@ const Certificates = ({ toogleCertificate }: ICertificateProps) => {
                     : "https://open-bootcamp.com/"
                 }
               >
-                <p> {certificate.company}</p>{" "}
+                <p> {certificate.company}</p>
                 <img
                   src={certificate.company === "Udemy" ? Udemy : OpenBootCamp}
                   alt="company"
@@ -144,8 +144,11 @@ const Certificates = ({ toogleCertificate }: ICertificateProps) => {
               </Link>
             </div>
             <div className="certificate-skills-container">
-              {certificate.skills.map((skill) => (
-                <p>{skill} -</p>
+              {certificate.skills.map((skill, index) => (
+                <p key={skill}>
+                  {skill}
+                  {index < certificate.skills.length - 1 && "-"}
+                </p>
               ))}
             </div>
           </div>
