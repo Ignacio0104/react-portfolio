@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
-@media screen and (max-width: 2560px) {
+@media screen and (max-width: 3500px) {
   .navbar-responsive-container {
     display: none;
   }

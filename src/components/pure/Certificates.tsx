@@ -145,9 +145,8 @@ const Certificates = ({ toogleCertificate }: ICertificateProps) => {
             </div>
             <div className="certificate-skills-container">
               {certificate.skills.map((skill, index) => (
-                <p key={skill}>
-                  {skill}
-                  {index < certificate.skills.length - 1 && "-"}
+                <p className="skill-items-list" key={skill}>
+                  {skill} {index < certificate.skills.length - 1 && " -"}
                 </p>
               ))}
             </div>

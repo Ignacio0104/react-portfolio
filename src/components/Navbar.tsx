@@ -24,6 +24,11 @@ const Navbar = () => {
     setMenuVisibility({ ...menuVisibility, [menu]: bool });
   };
 
+  const navigateTo = (address: string) => {
+    setMenuResponsive(false);
+    navigate(address);
+  };
+
   return (
     <>
       <div className="navbar-responsive-container">
@@ -36,7 +41,7 @@ const Navbar = () => {
       <div className={`navbar-container ${menuResponsive ? "visible" : ""}`}>
         <div className="icons-container">
           <i
-            onClick={() => navigate("/")}
+            onClick={() => navigateTo("/")}
             onMouseEnter={() => toogleMenuOption("home", true)}
             onMouseLeave={() => toogleMenuOption("home", false)}
           >
@@ -48,7 +53,7 @@ const Navbar = () => {
             </span>
           </i>
           <i
-            onClick={() => navigate("/about")}
+            onClick={() => navigateTo("/about")}
             onMouseEnter={() => toogleMenuOption("about", true)}
             onMouseLeave={() => toogleMenuOption("about", false)}
           >
@@ -62,7 +67,7 @@ const Navbar = () => {
             </span>
           </i>
           <i
-            onClick={() => navigate("/portfolio")}
+            onClick={() => navigateTo("/portfolio")}
             onMouseEnter={() => toogleMenuOption("portfolio", true)}
             onMouseLeave={() => toogleMenuOption("portfolio", false)}
           >
@@ -76,7 +81,7 @@ const Navbar = () => {
             </span>
           </i>
           <i
-            onClick={() => navigate("/workExperience")}
+            onClick={() => navigateTo("/workExperience")}
             onMouseEnter={() => toogleMenuOption("workExperience", true)}
             onMouseLeave={() => toogleMenuOption("workExperience", false)}
           >
@@ -92,7 +97,7 @@ const Navbar = () => {
             </span>
           </i>
           <i
-            onClick={() => navigate("/contact")}
+            onClick={() => navigateTo("/contact")}
             onMouseEnter={() => toogleMenuOption("contact", true)}
             onMouseLeave={() => toogleMenuOption("contact", false)}
           >

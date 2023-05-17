@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 3500px) {
   .about-container {
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
     animation: fade-in-about 0.5s ease-out forwards;
     width: 90%;
   }
@@ -38,6 +39,65 @@
   }
   .about-description-container p {
     font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-description-container {
+    width: 80vw;
+  }
+  .about-description-container h2 {
+    font-size: 20px;
+  }
+  .about-description-container p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-container {
+    width: 100vw;
+  }
+  .about-description-container {
+    width: 90vw;
+    margin: 10px 20px 5px 20px;
+  }
+  .about-description-container h2 {
+    font-size: 17px;
+  }
+  .about-description-container p {
+    font-size: 10px;
+  }
+  .about-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 422px) and (min-height: 655px) {
+  .about-container {
+    height: 100vh;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 420px) and (min-height: 823px) {
+  .about-container {
+    height: 100vh;
+  }
+}
+@media screen and (max-width: 360px) and (min-height: 740px) {
+  .about-container {
+    height: 100vh;
+  }
+  .about-description-container {
+    margin: 20px 20px 10px;
+  }
+}
+@media screen and (max-width: 320px) and (min-height: 655px) {
+  .about-container {
+    height: 100vh;
+  }
+  .about-description-container {
+    margin: 20px 15px 10px;
   }
 }
 @keyframes fade-in-about {
