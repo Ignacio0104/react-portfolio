@@ -55,6 +55,22 @@
     }
 }
 
+@media screen and (max-width: 1440px) and (max-height: 570px){
+    .icons-container{
+        i{
+            margin: 10px 10px 20px 10px;
+            svg{
+                font-size: 25px;
+            }
+            span{
+                font-size: 10px;
+            }     
+    
+        }
+    }
+}
+
+
 
 @media screen and (max-width: 1024px){
     
@@ -71,6 +87,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 768px) {
     .icons-container{

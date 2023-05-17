@@ -132,6 +132,34 @@
     }
 }
 
+
+@media screen and (max-width: 1440px) and (max-height: 570px){
+    .image-container{
+        img{
+            height: 45vh;
+            width: 22vw;    
+        }
+    }
+    .description-container{
+        .description-title{
+            font-size: 40px;
+        }
+        .description-text{
+            font-size: 15px;
+        }
+    }
+    .btn-cv{
+        font-size: 15px;
+    }
+
+    .btn-linkedin{
+        font-size: 15px;
+        svg{
+            font-size: 20px;
+        }
+    }
+}
+
 @media screen and (max-width: 1024px){
     .description-container{
         .description-title{

@@ -1,59 +1,6 @@
 @import "../variables/MainColors.scss";
 
-
-.about-container{
-    display: flex;
-    flex-direction: column;
-    animation: fade-in-about 0.5s ease-out forwards;  
-    width: 90%;
-}
-
-.about-description-container{
-    margin: 3vh 15vw 1vh 15vw ;
-    font-family: $main-font;
-    color: $black-color;
-    width: 60vw;
-}
-
-.about-description-text{
-    font-size: 2.5vh;
-}
-
-.about-info-container{
-    display: flex;
-    justify-content: center;
-}
-
-
-@media only screen and (max-width: 425px) {
- .about-container{
-    display: flex;
-    flex-direction: column;
-    animation: fade-in-about 0.5s ease-out forwards; 
-    width: 100%;
- } 
-    .about-description-container{
-        margin: 3vh 4vw 0 4vw;
-        font-family: $main-font;
-        color: $black-color;
-        width: 92%;
-    }
-
-    .about-description-text{
-        font-size: 2vh;
-    }
-    .about-info-container{
-        display: flex;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .about-info-container{
-        display: flex;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 2560px) {
     .about-container{
         display: flex;
         flex-direction: column;
@@ -62,29 +9,42 @@
     }
     
     .about-description-container{
-        margin: 5vh 10vw 5vh 10vw;
-        width: 70vw;
-    } 
+        margin: 15px auto;
+        font-family: $main-font;
+        color: $black-color;
+        width: 60vw;
+
+        h2{
+            font-size: 50px;
+        }
+    }
+    
+    .about-description-text{
+        font-size: 2.5vh;
+    }
+    
+    .about-info-container{
+        display: flex;
+        justify-content: space-around;
+    }   
 }
 
-@media only screen and (min-width: 1440px) {
-    .about-container{
+@media screen and (max-width:1440px){
+    .about-description-container{
         h2{
             font-size: 30px;
-        }
-        p{
-            font-size: 20px;
         }
     }
 }
 
-@media only screen and (min-width: 2560px) {
-    .about-container{
+@media screen and (max-width:1024px){
+    .about-description-container{
+        width: 80vw;
         h2{
-            font-size: 5vh;
+            font-size: 25px;
         }
         p{
-            font-size: 2.5vh;
+            font-size: 15px;
         }
     }
 }
