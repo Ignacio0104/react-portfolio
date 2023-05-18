@@ -106,9 +106,10 @@
     font-size: 15px;
   }
   .education-container .list-item-uni p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .certificates-container .certificates-links {
+    padding: 10px 25px;
     margin-top: 2vh;
     font-size: 12px;
   }
