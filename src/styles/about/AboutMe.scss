@@ -87,19 +87,27 @@
 @media screen and (max-width:422px) and (min-height:655px) {
     .about-container{
         height: 100vh;
-       margin-top: 15px;
+        position: relative;
+        margin: 0px;
+        top:20px
     }
 }
 
 @media screen and (max-width:420px) and (min-height:823px){
     .about-container{
         height: 100vh;
+        position: relative;
+        margin: 0px;
+        top:20px
     }
 }
 
 @media screen and (max-width:360px) and (min-height:740px){
     .about-container{
         height: 100vh;
+        position: relative;
+        margin: 0px;
+        top:20px
     }
 
     .about-description-container{
@@ -110,6 +118,9 @@
 @media screen and (max-width:320px) and (min-height:655px){
     .about-container{
         height: 100vh;
+        position: relative;
+        margin: 0px;
+        top:20px
     }
 
     .about-description-container{
