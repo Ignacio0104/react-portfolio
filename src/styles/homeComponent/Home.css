@@ -233,7 +233,8 @@
     margin: 0px;
     display: flex;
     justify-content: center;
-    margin-top: 8vh;
+    position: relative;
+    top: 8vh;
   }
   .information-container {
     display: flex;

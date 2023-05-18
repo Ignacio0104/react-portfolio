@@ -358,8 +358,7 @@
 @media screen and (max-width:425px){
     .contact-container{
         height: 100vh;
-        position: relative;
-        top:3vh;
+        margin-top: 3px;
         h2{
             font-size: 35px;
         }
@@ -391,8 +390,7 @@
 @media screen and (max-width:375px){
     .contact-container{
         height: 100vh;
-        position: relative;
-        top:3vh;
+        margin-top: 3px;
         h2{
             font-size: 35px;
         }
@@ -469,8 +467,7 @@
 
 @media screen and (max-width:360px) and (min-height:740px){
     .contact-container{
-        position: relative;
-        top:3vh;
+        margin-top: 30px;
         h2{
             font-size: 35px;
         }
@@ -511,8 +508,7 @@
 
 @media screen and (max-width:320px) and (min-height:655px){
     .contact-container{
-        position: relative;
-        top:3vh;
+        margin-top: 30px;
         h2{
             font-size: 35px;
         }
@@ -543,8 +539,7 @@
 
 @media screen and (max-width:415px) and (min-height:800px){
     .contact-container{
-        position: relative;
-        top:3vh;
+        margin-top: 20px;
         h2{
             font-size: 40px;
         }
