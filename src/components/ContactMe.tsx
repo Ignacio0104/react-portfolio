@@ -7,7 +7,7 @@ import SendIcon from "@mui/icons-material/Send";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import CircularProgress from "@mui/material/CircularProgress";
 import Snackbar from "@mui/material/Snackbar";

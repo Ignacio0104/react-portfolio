@@ -169,7 +169,7 @@
     font-size: 25px;
   }
 }
-@media screen and (max-width: 1440px) and (max-height: 570px) {
+@media screen and (max-width: 1440px) and (max-height: 620px) {
   .image-container img {
     height: 45vh;
     width: 22vw;

@@ -1,109 +1,586 @@
 @import "../variables/MainColors.scss";
 
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2vh auto;
-    h2{
-        font-family: $name-font;
-        font-size: 8vh;
-        margin-block-end: 0px;
+@media screen and (max-width:6000px){
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2vh auto;
+        h2{
+            font-family: $name-font;
+            font-size: 130px;
+            margin-block-end: 0px;
+        }
+        animation: fade-in-contact 0.5s ease-in forwards; 
     }
-    animation: fade-in-contact 0.5s ease-in forwards; 
-}
-
-.contact-icons-container{
-    display: flex;
-    margin: 3vh;
-    width:20vw;
-    justify-content: space-around; 
-    a{
+    
+    .contact-icons-container{
+        display: flex;
+        margin: 3vh;
+        width:25vw;
+        justify-content: space-around; 
+        a{
+            display: flex;
+            align-items: center;
+            background: rgb(97,97,97);
+            background: linear-gradient(81deg, rgba(97,97,97,0.555234593837535) 0%, rgba(40,3,68,0.46559873949579833) 37%, rgba(2,3,3,0.38996848739495793) 100%);
+            border-radius: 50%;
+            color: $dark-yellow;
+            padding: 10px;
+            svg{
+                font-size: 60px;
+            }
+        }
+        a:hover{
+            color: rgb(237, 148, 160);
+            transition: all 0.3s ease-in;
+        }
+    }
+    
+    .input-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7vh 5vh 7vh 5vh 7vh 5vh 12vh 5vh;
+        margin-block-start: 10px;
+        input,textarea{
+            width: 900px;
+            font-size: 40px;
+        } 
+    }
+    .error{
+        border-radius: 20px;
+        color: black;
+    }
+    .submit-btn{
+        cursor: pointer;
         display: flex;
         align-items: center;
-        background: rgb(97,97,97);
-        background: linear-gradient(81deg, rgba(97,97,97,0.555234593837535) 0%, rgba(40,3,68,0.46559873949579833) 37%, rgba(2,3,3,0.38996848739495793) 100%);
-        border-radius: 50%;
-        color: $dark-yellow;
-        padding: 2px;
+        justify-content: center;
+        padding: 20px 10px;
+        width: 600px;
+        margin: auto;
+        border-radius: 20px;
+        background-image: url("../../assets/images/button-background.png");
+        background-size: cover;
+        color: wheat;
+        font-weight: bold;
+        font-family: $main-font; 
+        font-size: 40px;
+        .send-icon{
+            display: none;    
+            animation: fade-in-button 0.5s ease-out forwards;  
+            svg{
+                font-size: 50px;
+            }
+        }
+        p{
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
     }
-    a:hover{
-        color: rgb(237, 148, 160);
-        transition: all 0.3s ease-in;
-    }
-}
-
-.input-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 7vh 5vh 7vh 5vh 7vh 5vh 12vh 5vh
-}
-
-
-.submit-btn{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 2px 10px;
-    width: 12vw;
-    margin: auto;
-    border-radius: 10px;
-    background-image: url("../../assets/images/button-background.png");
-    background-size: cover;
-    color: wheat;
-    font-weight: bold;
-    font-family: $main-font; 
-    .send-icon{
-        display: none;
-        animation: fade-in-button 0.5s ease-out forwards; 
-        margin-top:3px
-    }
-}
-
-.spinner{
-    color: wheat;
-}
-
-.thanks-message-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    margin: 10vh 25vw;
-    animation: fade-in-contact 0.5s ease-in forwards; 
     
+    .spinner{
+        color: wheat;
+    }
+    
+    .thanks-message-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        margin: 200px auto;
+        animation: fade-in-contact 0.5s ease-in forwards; 
+    
+        .thank-title{
+            font-family: $name-font;
+            font-size: 70px;
+        }
+    
+        .new-message-btn{
+            cursor: pointer;
+            padding:10px 50px;
+            border-radius: 10px;
+            border:none;
+            background-color: rgba(172, 169, 169, 0.505);
+            font-family: $main-font;
+            font-size: 40px;
+        }
+    
+        .new-message-btn:hover{
+            background-color: rgba(228, 226, 226, 0.795);
+            transition: all 0.5s ease-in-out;
+        }     
+    }
+    
+    button:hover{
+        .send-icon{
+            display: flex;
+            align-items: center;
+            margin-left: 80px;
+        }
+        p{
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    
+}
 
-    .thank-title{
-        font-family: $name-font;
+@media screen and (max-width:1440px) {
+    .contact-container{
+        margin: 2vh auto;
+        h2{
+            font-size: 70px;
+        }
+    }
+    
+    .contact-icons-container{
+        width:25vw;
+        a{
+            padding: 5px;
+            svg{
+                font-size: 30px;
+            }
+        }
     }
 
-    .new-message-btn{
-        cursor: pointer;
-        padding:10px;
+    .thanks-message-container{
+        margin: 80px auto;
+        .thank-title{
+            font-size: 40px;
+        }
+    
+        .new-message-btn{
+            padding:10px 30px;
+            font-size: 20px;
+        }   
+    }
+    
+    .input-container{
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 7vh 4vh 7vh 4vh 7vh 4vh 12vh 4vh;
+        input,textarea{
+            width: 100%;
+            font-size: 20px;
+        } 
+    }
+    
+    .submit-btn{
+        padding: 10px 10px;
+        width: 70%;
+        margin: auto;
         border-radius: 10px;
-        border:none;
-        background-color: rgba(172, 169, 169, 0.505);
-        font-family: $main-font;
+        font-size: 25px;
+        .send-icon{
+            svg{
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1440px) and (max-height:620px) {
+    .contact-container{
+        margin: 2vh auto;
+        h2{
+            font-size: 55px;
+        }
     }
 
-    .new-message-btn:hover{
-        background-color: rgba(228, 226, 226, 0.795);
-        transition: all 0.5s ease-in-out;
+    .thanks-message-container{
+        margin: 70px auto;
+        .thank-title{
+            font-size: 35px;
+        }
+    
+        .new-message-btn{
+            font-size: 15px;
+        }   
+    }
+    
+    .contact-icons-container{
+        width:25vw;
+        a{
+            padding: 5px;
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .input-container{
+        grid-template-columns: 350px;
+        grid-template-rows: 6vh 4vh 6vh 4vh 6vh 4vh 12vh 4vh;
+        input,textarea{
+            font-size: 17px;
+        } 
+    }
+
+    .error{
+        margin-top: 3px;
+    }
+    
+    .submit-btn{
+        width: 50%;
+        font-size: 15px;
+        .send-icon{
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+
+    button:hover{
+        .send-icon{
+            margin-left: 40px;
+        }
+
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .contact-container{
+        margin: auto;
+        margin-top: -10px;
+        h2{
+            font-size: 60px;
+        }
+    }
+    
+    .contact-icons-container{
+        a{
+            svg{
+                font-size: 25px;
+            }
+        }
+    }
+
+    .thanks-message-container{
+        margin: 70px auto;
+        .thank-title{
+            font-size: 30px;
+        }
+    
+        .new-message-btn{
+            font-size: 13px;
+        }   
+    }
+    
+    .input-container{
+        display: grid;
+        grid-template-columns: 420px;
+        input,textarea{
+            font-size: 18px;
+        } 
+    }
+
+    .error{
+        margin-top: 2px;
+    }
+    
+    .submit-btn{
+        padding: 10px 10px;
+        width: 50%;
+        margin: auto;
+        border-radius: 10px;
+        font-size: 20px;
+        .send-icon{
+            svg{
+                font-size: 30px;
+            }
+        }
+    }
+
+    button:hover{
+        .send-icon{
+            margin-left: 50px;
+        }
     }
     
 }
 
-
-button:hover{
-    .send-icon{
-        display: inline;
+@media screen and (max-width:768px) {
+    .contact-container{
+        h2{
+            font-size: 40px;
+        }
     }
-    p{
-        transition: all 0.3s ease-in-out;
+    
+    .contact-icons-container{
+        a{
+            padding: 4px;
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+    
+    .input-container{
+        display: grid;
+        grid-template-columns: 350px;
+        input,textarea{
+            font-size: 15px;
+        } 
+    }
+
+    .thanks-message-container{
+        margin: 50px auto;
+        .thank-title{
+            font-size: 23px;
+        }
+    
+        .new-message-btn{
+            padding: 8px 30px;
+            font-size: 12px;
+        }   
+    }
+    .error{
+        margin-top: 2px;
+    }
+    
+    .submit-btn{
+        font-size: 15px;
+        .send-icon{
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+
+    button:hover{
+        .send-icon{
+            margin-left: 50px;
+        }
+    }
+    
+}
+
+@media screen and (max-width:425px){
+    .contact-container{
+        height: 100vh;
+        margin-top: 3px;
+        h2{
+            font-size: 35px;
+        }
+
+        .contact-icons-container{
+            width: 70%;
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+    .thanks-message-container{
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        top: 70px;
+        .thank-title{
+            font-size: 18px;
+   
+        }
+    
+        .new-message-btn{
+            padding: 8px 30px;
+            font-size: 12px;
+        }   
     }
 }
 
+@media screen and (max-width:375px){
+    .contact-container{
+        height: 100vh;
+        margin-top: 3px;
+        h2{
+            font-size: 35px;
+        }
+        .input-container{
+            grid-template-columns: 300px;
+            input,textarea{
+                font-size: 12px;
+            }       
+        }
+        .contact-icons-container{
+            width: 70%;
+            svg{
+                font-size: 20px;
+            }
+        }
+    }
+    .thanks-message-container{
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        top: 50px;
+        .thank-title{
+            font-size: 16px;
+        }
+        .new-message-btn{
+            font-size: 10px;
+        }   
+    }
+}
+
+@media screen and (max-width:320px){
+    .contact-container{
+        h2{
+            font-size: 35px;
+        }
+        .input-container{
+            grid-template-columns: 250px;
+            input,textarea{
+                font-size: 12px;
+            }       
+        }
+
+        .error{
+            font-size: 9px;
+        }
+        .contact-icons-container{
+            width: 70%;
+            svg{
+                font-size: 20px;
+            }
+        }
+        button:hover{
+            .send-icon{
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .thanks-message-container{
+        height: 100vh;
+        margin: auto;
+        position: relative;
+        top: 50px;
+        .thank-title{
+            font-size: 13px;
+        }
+        .new-message-btn{
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 8px;
+        }   
+    }
+}
+
+@media screen and (max-width:360px) and (min-height:740px){
+    .contact-container{
+        margin-top: 30px;
+        h2{
+            font-size: 35px;
+        }
+        .input-container{
+            grid-template-columns: 280px;
+            grid-template-rows: 5vh 2.4vh 5vh 2.4vh 5vh 2.4vh 10vh 4vh;
+            input,textarea{
+                font-size: 12px;
+            }       
+        }
+
+        .error{
+            font-size: 9px;
+        }
+        .contact-icons-container{
+            width: 70%;
+            svg{
+                font-size: 18px;
+            }
+        }
+        button:hover{
+            .send-icon{
+                margin-left: 30px;
+            }
+        }
+    }
+    .thanks-message-container{
+        .thank-title{
+            font-size: 15px;
+        }
+        .new-message-btn{
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 8px;
+        }   
+    }
+}
+
+@media screen and (max-width:320px) and (min-height:655px){
+    .contact-container{
+        margin-top: 30px;
+        h2{
+            font-size: 35px;
+        }
+        .input-container{
+            grid-template-columns: 250px;
+            grid-template-rows: 5vh 3vh 5vh 3vh 5vh 3vh 10vh 4vh;
+            input,textarea{
+                font-size: 12px;
+                width: 97%;
+            }       
+        }
+        .error{
+            font-size: 9px;
+        }
+        .contact-icons-container{
+            width: 70%;
+            svg{
+                font-size: 18px;
+            }
+        }
+        button:hover{
+            .send-icon{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:415px) and (min-height:800px){
+    .contact-container{
+        margin-top: 20px;
+        h2{
+            font-size: 40px;
+        }
+        .input-container{
+            grid-template-columns: 300px;
+            grid-template-rows: 5vh 3vh 5vh 3vh 5vh 3vh 10vh 4vh;
+            input,textarea{
+                font-size: 15px;
+                width: 97%;
+            }       
+        }
+        .error{
+            font-size: 11px;
+        }
+        .contact-icons-container{
+            width: 80%;
+            svg{
+                font-size: 18px;
+            }
+        }
+        button:hover{
+            .send-icon{
+                margin-left: 30px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:415px) and (min-height:640px){
+    .thanks-message-container{
+        .thank-title{
+            font-size: 15px;
+        }
+        .new-message-btn{
+            padding: 5px 20px;
+            border-radius: 5px;
+            font-size: 8px;
+        }   
+    }
+}
 
 @keyframes fade-in-button {
     from {
