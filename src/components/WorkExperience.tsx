@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react";
 import "../styles/workExperience/workExperience.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const WorkExperience = () => {
+  const [linkedinBtnEnd, setLinkedinBtnEnd] = useState(false);
+
+  useEffect(() => {
+    checkBtnLikedin();
+  }, []);
+
+  const checkBtnLikedin = () => {
+    if (window.innerWidth <= 425) {
+      setLinkedinBtnEnd(true);
+    } else {
+      setLinkedinBtnEnd(false);
+    }
+  };
+
+  window.addEventListener("resize", checkBtnLikedin);
+
   return (
     <div className="work-exp-container">
       <div className="timeline">
@@ -43,14 +60,16 @@ const WorkExperience = () => {
               </p>
             </div>
           </div>
-          <button
-            className="btn-linkedin"
-            onClick={() =>
-              window.open("http://www.linkedin.com/in/ignacio-smirlian")
-            }
-          >
-            LinkedIn <LinkedInIcon />
-          </button>
+          {!linkedinBtnEnd && (
+            <button
+              className="btn-linkedin"
+              onClick={() =>
+                window.open("http://www.linkedin.com/in/ignacio-smirlian")
+              }
+            >
+              LinkedIn <LinkedInIcon />
+            </button>
+          )}
         </div>
       </div>
       <div className="timeline">
@@ -111,6 +130,16 @@ const WorkExperience = () => {
               </ul>
             </div>
           </div>
+          {linkedinBtnEnd && (
+            <button
+              className="btn-linkedin"
+              onClick={() =>
+                window.open("http://www.linkedin.com/in/ignacio-smirlian")
+              }
+            >
+              LinkedIn <LinkedInIcon />
+            </button>
+          )}
         </div>
       </div>
     </div>

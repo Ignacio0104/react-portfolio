@@ -1,80 +1,289 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
-.work-exp-container {
-  display: flex;
-  margin-top: 0;
-  width: 90vw;
-  animation: fade-in-work 0.5s ease-out forwards;
+@media screen and (max-width: 6000px) {
+  .work-exp-container {
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    width: 90vw;
+    animation: fade-in-work 0.5s ease-out forwards;
+  }
+  /* Timeline Container */
+  .timeline {
+    padding: 20px;
+    width: 60vw;
+  }
+  .timeline button {
+    margin: auto;
+    margin-top: 10vh;
+  }
+  /* Outer Layer with the timeline border */
+  .outer {
+    border-left: 2px solid #333;
+    height: 100%;
+  }
+  /* Card container */
+  .card {
+    position: relative;
+    margin: 0 0 75px 20px;
+    padding: 10px;
+    background: rgba(51, 51, 51, 0.7960784314);
+    color: #ffc300;
+    border-radius: 8px;
+    width: 98%;
+  }
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .info ul, .info p {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    font-size: 35px;
+  }
+  .info ul li, .info p li {
+    margin-bottom: 5px;
+  }
+  /* Title of the card */
+  .title {
+    color: tomato;
+    position: relative;
+    -webkit-margin-before: 0em;
+            margin-block-start: 0em;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    font-size: 40px;
+  }
+  .title span {
+    font-size: 30px;
+    font-weight: lighter;
+  }
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    left: -39px;
+    border: 3px solid orangered;
+  }
 }
-
-/* Timeline Container */
-.timeline {
-  padding: 20px;
-  width: 60vw;
+@media screen and (max-width: 1440px) {
+  .work-exp-container {
+    margin: auto;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .title span {
+    font-size: 12px;
+  }
+  .info {
+    gap: 10px;
+  }
+  .info ul, .info p {
+    font-size: 15px;
+  }
+  .timeline {
+    width: 40vw;
+  }
+  .card {
+    margin: 0 0 50px 20px;
+  }
 }
-.timeline button {
-  margin: auto;
-  margin-top: 10vh;
+@media screen and (max-width: 1440px) and (min-height: 569px) {
+  .work-exp-container {
+    margin: 10px auto;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .title span {
+    font-size: 11px;
+  }
+  .info {
+    gap: 10px;
+  }
+  .info p {
+    font-size: 13px;
+  }
+  .info ul {
+    font-size: 13px;
+    padding-left: 20px;
+  }
+  .info ul li {
+    margin-bottom: 3px;
+  }
+  .timeline {
+    width: 40vw;
+    padding-top: 0px;
+  }
+  .timeline button {
+    font-size: 18px;
+  }
+  .timeline button svg {
+    font-size: 25px;
+  }
+  .card {
+    margin: 0 0 30px 20px;
+  }
 }
-
-/* Outer Layer with the timeline border */
-.outer {
-  border-left: 2px solid #333;
-  height: 100%;
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 20px;
+  }
+  .title span {
+    font-size: 11px;
+  }
+  .info {
+    gap: 10px;
+  }
+  .info ul, .info p {
+    font-size: 13px;
+  }
+  .card {
+    margin: 0 0 20px 20px;
+  }
+  .timeline {
+    width: 38vw;
+  }
+  .timeline button {
+    font-size: 20px;
+  }
+  .timeline button svg {
+    font-size: 25px;
+  }
 }
-
-/* Card container */
-.card {
-  position: relative;
-  margin: 0 0 20px 20px;
-  padding: 10px;
-  background: rgba(51, 51, 51, 0.7960784314);
-  color: #ffc300;
-  border-radius: 8px;
-  width: 98%;
+@media screen and (max-width: 768px) {
+  .work-exp-container {
+    margin: 0px;
+  }
+  .title {
+    font-size: 13px;
+  }
+  .title span {
+    font-size: 9px;
+  }
+  .title::before {
+    width: 6px;
+    height: 6px;
+    left: -27px;
+  }
+  .info {
+    gap: 4px;
+  }
+  .info p {
+    padding: 0px;
+    font-size: 10px;
+  }
+  .info ul {
+    font-size: 10px;
+    padding: 5px 17px 0px 17px;
+  }
+  .info ul li {
+    margin-bottom: 0px;
+  }
+  .card {
+    margin: 0 0 20px 10px;
+  }
+  .timeline {
+    padding: 5px 20px;
+  }
+  .timeline button {
+    font-size: 15px;
+  }
+  .timeline button svg {
+    font-size: 20px;
+  }
 }
-
-/* Information about the timeline */
-.info {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
+@media screen and (max-width: 425px) {
+  .work-exp-container {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100vw;
+  }
+  .timeline {
+    width: 88vw;
+    padding: 0px 20px;
+  }
+  .timeline button {
+    margin: 20px auto;
+  }
+  .card {
+    margin: 0 0 10px 10px;
+  }
 }
-.info ul, .info p {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  font-size: 2.5vh;
+@media screen and (max-width: 415px) and (min-height: 740px) {
+  .work-exp-container {
+    height: 100vh;
+  }
 }
-.info ul li, .info p li {
-  margin-bottom: 5px;
+@media screen and (max-width: 424px) and (min-height: 670px) {
+  .work-exp-container {
+    height: 100vh;
+  }
+  .title {
+    margin-bottom: 6px;
+  }
+  .card {
+    margin: 0 0 10px 10px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+  .info ul {
+    font-size: 12px;
+    padding: 5px 17px 0px 17px;
+  }
+  .info ul li {
+    margin-bottom: 0px;
+  }
 }
-
-/* Title of the card */
-.title {
-  color: tomato;
-  position: relative;
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
+@media screen and (max-width: 375px) {
+  .title {
+    font-size: 12px;
+  }
+  .title span {
+    font-size: 8px;
+  }
+  .timeline {
+    width: 85vw;
+  }
+  .timeline button {
+    margin: 20px auto;
+  }
+  .info ul {
+    font-size: 9px;
+  }
+  .card {
+    margin: 0 0 10px 10px;
+  }
 }
-.title span {
-  font-size: 2vh;
-  font-weight: lighter;
+@media screen and (max-width: 320px) {
+  .timeline {
+    width: 83vw;
+  }
+  .timeline button {
+    font-size: 13px;
+    padding: 5px 15px;
+  }
 }
-
-/* Timeline dot  */
-.title::before {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: white;
-  border-radius: 999px;
-  left: -39px;
-  border: 3px solid orangered;
+@media screen and (max-width: 320px) and (min-height: 655px) {
+  .title {
+    font-size: 11px;
+  }
+  .title span {
+    font-size: 7px;
+  }
+  .info ul {
+    font-size: 8px;
+  }
 }
-
 @keyframes fade-in-work {
   from {
     opacity: 0;

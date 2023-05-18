@@ -177,7 +177,7 @@
     margin-top: 25%;
   }
 }
-@media screen and (max-width: 412px) and (min-height: 820px) {
+@media screen and (max-width: 424px) and (min-height: 600px) {
   .project-container {
     height: 60%;
     margin-top: 20%;

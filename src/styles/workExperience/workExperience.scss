@@ -1,7 +1,9 @@
 @import "../variables/MainColors.scss";
 
-.work-exp-container{
+@media screen and (max-width:6000px){
+  .work-exp-container{
     display: flex;
+    margin: auto;
     margin-top: 0;
     width: 90vw;
     animation: fade-in-work 0.5s ease-out forwards;  
@@ -11,7 +13,6 @@
   .timeline {
     padding: 20px;
     width: 60vw;
-
     button{
         margin: auto;
         margin-top: 10vh;
@@ -25,11 +26,10 @@
   }
 
   
-  
   /* Card container */
   .card {
     position: relative;
-    margin: 0 0 20px 20px;
+    margin: 0 0 75px 20px;
     padding: 10px;
     background: #333333cb;
     color: $dark-yellow;
@@ -41,10 +41,10 @@
   .info {
     display: flex;
     flex-direction: column;
-    gap: 1vh;
+    gap: 30px;
     ul,p{
         margin-block-start: 0;
-        font-size: 2.5vh;
+        font-size: 35px;
         li{
             margin-bottom: 5px;
         }
@@ -57,11 +57,11 @@
     position: relative;
     margin-block-start: 0em;
     margin-block-end: 0;
+    font-size: 40px;
     span{
-        font-size: 2vh;
+        font-size: 30px;
         font-weight: lighter;
     }
-
   }
   
   /* Timeline dot  */
@@ -75,7 +75,254 @@
     left: -39px;
     border: 3px solid orangered;
   }
+}
 
+@media screen and (max-width:1440px) {
+  .work-exp-container{
+    margin: auto;
+  }
+  .title{
+    font-size: 25px;
+    span{
+      font-size: 12px;
+    }
+  }
+
+  .info {
+    gap: 10px;
+    ul,p{
+        font-size:15px;
+    }
+  }
+
+  .timeline {
+    width: 40vw;
+  }
+
+  .card {
+    margin: 0 0 50px 20px;
+  }
+}
+
+@media screen and (max-width:1440px) and (min-height:569px) {
+  .work-exp-container{
+    margin: 10px auto;
+  }
+  .title{
+    font-size: 18px;
+    span{
+      font-size: 11px;
+    }
+  }
+
+  .info {
+    gap: 10px;
+    p{
+      font-size:13px;
+    }
+    ul{
+        font-size:13px;
+        padding-left: 20px;
+        li{
+          margin-bottom: 3px;
+        
+        }
+    }
+  }
+
+  .timeline {
+    width: 40vw;
+    padding-top: 0px;
+    button{
+      font-size: 18px;
+      svg{
+        font-size: 25px;
+      }
+    }
+  }
+
+  .card {
+    margin: 0 0 30px 20px;
+  }
+}
+
+
+@media screen and (max-width:1024px) {
+  .title{
+    font-size: 20px;
+    span{
+      font-size: 11px;
+    }
+  }
+
+
+  .info {
+    gap: 10px;
+    ul,p{
+        font-size:13px;
+    }
+  }
+
+  .card {
+    margin: 0 0 20px 20px;
+  }
+
+  .timeline{
+    width: 38vw;
+    button{
+      font-size: 20px;
+      svg{
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .work-exp-container{
+    margin: 0px;
+  }
+  .title{
+    font-size: 13px;
+    span{
+      font-size: 9px;
+    }
+  }
+
+  .title::before {
+    width: 6px;
+    height: 6px;
+    left: -27px;
+  }
+
+  .info {
+    gap: 4px;
+    p{
+      padding: 0px;
+      font-size:10px;
+    }
+    ul{
+        font-size:10px;
+        padding: 5px 17px 0px 17px;
+        li{
+          margin-bottom: 0px
+        }
+    }
+  }
+  .card {
+    margin: 0 0 20px 10px;
+  }
+
+  .timeline{
+    padding: 5px 20px;
+    button{
+      font-size: 15px;
+      svg{
+        font-size: 20px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:425px){
+    .work-exp-container{
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+      width: 100vw;
+  }
+  .timeline{
+    width: 88vw;
+    padding: 0px 20px;
+    button{
+      margin: 20px auto;
+    }
+  }
+
+  .card {
+    margin: 0 0 10px 10px;
+  }
+}
+
+@media screen and (max-width:415px) and (min-height:740px) {
+    .work-exp-container{
+      height:100vh
+    }
+}
+
+@media screen and (max-width:424px) and (min-height:670px) {
+  .work-exp-container{
+    height:100vh
+  }
+  .title{
+    margin-bottom: 6px;
+  }
+
+  .card {
+    margin: 0 0 10px 10px;
+  }
+  .info {
+    p{
+      font-size:12px;
+    }
+    ul{
+        font-size:12px;
+        padding: 5px 17px 0px 17px;
+        li{
+          margin-bottom: 0px
+        }
+    }
+  }
+}
+
+@media screen and (max-width:375px){
+  .title{
+    font-size: 12px;
+    span{
+      font-size: 8px;
+    }
+  }
+  .timeline{
+    width: 85vw;
+    button{
+      margin: 20px auto;
+    }
+  }
+
+  .info{
+    ul{
+      font-size: 9px;
+    }
+  }
+  .card {
+    margin: 0 0 10px 10px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .timeline{
+    width: 83vw;
+    button{
+      font-size: 13px;
+      padding: 5px 15px;
+    }
+  }
+}
+
+@media screen and (max-width:320px) and (min-height:655px) {
+  .title{
+    font-size: 11px;
+    span{
+      font-size: 7px;
+    }
+  }
+  .info{
+    ul{
+      font-size: 8px;
+    }
+  }
+}
   @keyframes fade-in-work {
     from {
         opacity: 0;
