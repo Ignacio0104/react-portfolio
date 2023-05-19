@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "../../styles/flyingBird/FlyingBird.css";
 import gifBird from "../../assets/gifs/eiMEkEK4T.gif";
 
@@ -6,23 +6,30 @@ const FlyingBirds = () => {
   const birdContainer = useRef<HTMLDivElement>(null);
   const birdContainerTwo = useRef<HTMLDivElement>(null);
   const birdContainerThree = useRef<HTMLDivElement>(null);
+  const [firstAnimation, setFirstAnimation] = useState({
+    first: true,
+    second: true,
+  });
 
-  const updatePositionBird = () => {
-    const newTop = Math.floor(Math.random() * 20);
+  const updateBirdOne = () => {
+    const newTop = Math.floor(Math.random() * 70);
+    setFirstAnimation({ ...firstAnimation, first: false });
     if (birdContainer.current) {
       birdContainer.current.style.top = `${newTop}vh`;
     }
   };
 
-  const updateAnimation = () => {
-    const newTop = Math.floor(Math.random() * 20);
-    if (birdContainerThree.current) {
-      birdContainerThree.current.style.top = `${newTop}vh`;
+  const updateBirdTwo = () => {
+    const newTop = Math.floor(Math.random() * 50);
+    console.log("called");
+    if (birdContainerTwo.current) {
+      birdContainerTwo.current.style.top = `${newTop}vh`;
+      setFirstAnimation({ ...firstAnimation, second: false });
     }
   };
 
-  const updateTopAndAnimation = () => {
-    const newTop = Math.floor(Math.random() * 30);
+  const updateBirdThree = () => {
+    const newTop = Math.floor(Math.random() * 80);
     if (birdContainerThree.current) {
       birdContainerThree.current.style.top = `${newTop}vh`;
     }
@@ -32,58 +39,59 @@ const FlyingBirds = () => {
     if (birdContainer.current) {
       birdContainer.current.addEventListener(
         "animationiteration",
-        updatePositionBird
+        updateBirdOne
       );
     }
     if (birdContainerTwo.current) {
       birdContainerTwo.current.addEventListener(
         "animationiteration",
-        updateAnimation
+        updateBirdTwo
       );
     }
     if (birdContainerThree.current) {
       birdContainerThree.current.addEventListener(
         "animationiteration",
-        updateTopAndAnimation
+        updateBirdThree
       );
     }
     return () => {
       if (birdContainer.current) {
         birdContainer.current.removeEventListener(
           "animationiteration",
-          updatePositionBird
+          updateBirdOne
         );
       }
 
       if (birdContainerTwo.current) {
         birdContainerTwo.current.removeEventListener(
           "animationiteration",
-          updateAnimation
+          updateBirdTwo
         );
       }
       if (birdContainerThree.current) {
         birdContainerThree.current.removeEventListener(
           "animationiteration",
-          updateTopAndAnimation
+          updateBirdThree
         );
       }
     };
-  }, []);
-
-  updateAnimation();
-  updateTopAndAnimation();
+  }, [firstAnimation]);
 
   return (
     <>
       <div className="bird-container" ref={birdContainer}>
         <img src={gifBird} alt="bird"></img>
       </div>
-      <div className="bird-container_two" ref={birdContainerTwo}>
-        <img src={gifBird} alt="bird"></img>
-      </div>
-      <div className="bird-container_three" ref={birdContainerThree}>
-        <img src={gifBird} alt="bird"></img>
-      </div>
+      {!firstAnimation.first && (
+        <div className="bird-container_two" ref={birdContainerTwo}>
+          <img src={gifBird} alt="bird"></img>
+        </div>
+      )}
+      {!firstAnimation.second && (
+        <div className="bird-container_three" ref={birdContainerThree}>
+          <img src={gifBird} alt="bird"></img>
+        </div>
+      )}
     </>
   );
 };

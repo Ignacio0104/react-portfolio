@@ -14,9 +14,9 @@
         font-family: $main-font;
         color: $black-color;
         width: 60vw;
-
         h2{
             font-size: 50px;
+           
         }
     }
     
@@ -27,6 +27,7 @@
     .about-info-container{
         display: flex;
         justify-content: space-around;
+
     }   
 }
 

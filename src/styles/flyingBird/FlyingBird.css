@@ -7,8 +7,8 @@
     animation: fly-in-out 10s linear infinite;
   }
   .bird-container img {
-    height: 110px;
-    width: 170px;
+    height: 400px;
+    width: 600px;
   }
   .bird-container_two {
     position: fixed;
@@ -18,33 +18,75 @@
     animation: fly-in-out 7s linear infinite;
   }
   .bird-container_two img {
-    height: 70px;
-    width: 150px;
+    height: 300px;
+    width: 400px;
   }
   .bird-container_three {
     position: fixed;
     z-index: 0;
     overflow: hidden;
     width: 95%;
-    animation: fly-in-out var(--animation-duration, 12s) linear infinite;
+    animation: fly-in-out var(--animation-duration, 15s) linear infinite;
   }
   .bird-container_three img {
-    height: 60px;
-    width: 130px;
+    height: 250px;
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .bird-container img {
+    height: 150px;
+    width: 200px;
+  }
+  .bird-container_two img {
+    height: 200px;
+    width: 400px;
+  }
+  .bird-container_three img {
+    height: 100px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1440px) and (max-height: 620px) {
+  .bird-container img {
+    height: 100px;
+    width: 200px;
+  }
+  .bird-container_two img {
+    height: 90px;
+    width: 180px;
+  }
+  .bird-container_three img {
+    height: 30px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 1024px) {
   .bird-container img {
-    height: 30px;
-    width: 80px;
+    height: 100px;
+    width: 200px;
   }
   .bird-container_two img {
-    height: 50px;
-    width: 100px;
+    height: 125px;
+    width: 200px;
   }
   .bird-container_three img {
-    height: 20px;
-    width: 50px;
+    height: 90px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bird-container img {
+    height: 80px;
+    width: 100px;
+  }
+  .bird-container_two img {
+    height: 70px;
+    width: 150px;
+  }
+  .bird-container_three img {
+    height: 30px;
+    width: 70px;
   }
 }
 @media screen and (max-width: 430px) {

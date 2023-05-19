@@ -94,11 +94,11 @@ const Portfolio = () => {
       navigation
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={() => {}}
       onSlideChange={() => console.log("slide change")}
     >
       {projectsList.map((project) => (
-        <SwiperSlide className="project-slide">
+        <SwiperSlide key={project.title} className="project-slide">
           <Project projectInfo={project} />
         </SwiperSlide>
       ))}
