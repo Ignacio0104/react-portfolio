@@ -1,0 +1,74 @@
+@media screen and (max-width: 6000px) {
+  .bird-container {
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+    width: 95%;
+    animation: fly-in-out 10s linear infinite;
+  }
+  .bird-container img {
+    height: 110px;
+    width: 170px;
+  }
+  .bird-container_two {
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+    width: 95%;
+    animation: fly-in-out 7s linear infinite;
+  }
+  .bird-container_two img {
+    height: 70px;
+    width: 150px;
+  }
+  .bird-container_three {
+    position: fixed;
+    z-index: 0;
+    overflow: hidden;
+    width: 95%;
+    animation: fly-in-out var(--animation-duration, 12s) linear infinite;
+  }
+  .bird-container_three img {
+    height: 60px;
+    width: 130px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bird-container img {
+    height: 30px;
+    width: 80px;
+  }
+  .bird-container_two img {
+    height: 50px;
+    width: 100px;
+  }
+  .bird-container_three img {
+    height: 20px;
+    width: 50px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .bird-container img {
+    height: 30px;
+    width: 80px;
+  }
+  .bird-container_two img {
+    height: 50px;
+    width: 100px;
+  }
+  .bird-container_three img {
+    height: 20px;
+    width: 50px;
+  }
+}
+@keyframes fly-in-out {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=FlyingBird.css.map */

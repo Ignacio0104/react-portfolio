@@ -6,12 +6,14 @@ import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import WorkExperience from "./components/WorkExperience";
 import ContactMe from "./components/ContactMe";
+import FlyingBirds from "./components/pure/FlyingBirds";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar></Navbar>
+        <FlyingBirds />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutMe />} />
