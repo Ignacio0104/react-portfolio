@@ -128,6 +128,40 @@
     .btn-cv-container {
         font-size: 35px;
       }
+
+  
+}
+
+@media screen and (max-width:2000px){
+
+    .image-container{
+        img{
+            height: 350px;
+            width: auto;
+        }
+    }
+    
+    .description-container{
+        .description-title{
+            font-family: $name-font;
+            font-size: 70px;
+        }
+        .description-text{
+            font-size: 17px;
+        }
+    }
+    
+    .btn-cv-container {
+        font-size: 20px;
+      }
+
+      .btn-linkedin{
+        font-size: 20px;
+
+        svg{
+            font-size: 25px;
+        }
+      }
 }
 
 @media screen and (max-width: 1510px){
@@ -231,7 +265,7 @@
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 428px){
     .home-container{
         width: 100vw;
         margin: 0px;

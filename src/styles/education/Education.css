@@ -15,17 +15,17 @@
     font-family: "Poppins", sans-serif;
   }
   .education-container h2 {
-    font-size: 45px;
+    font-size: 40px;
   }
   .education-container h5 {
-    font-size: 36px;
+    font-size: 25px;
     -webkit-margin-before: 0em;
             margin-block-start: 0em;
     -webkit-margin-after: 0em;
             margin-block-end: 0em;
   }
   .education-container .list-item-uni p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .certificates-container {
     display: flex;
@@ -35,9 +35,9 @@
     display: flex;
     align-items: center;
     color: #001d3d;
-    margin-top: 2vh;
+    margin-top: 20px;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     background-color: rgba(181, 175, 175, 0.607);
     padding: 5px 30px;
@@ -51,7 +51,8 @@
     color: rgba(248, 215, 28, 0.893);
   }
   .more-btn {
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 5px 0px;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -61,7 +62,7 @@
     border-radius: 20px;
     background-image: url("../../assets/images/button-background-opacitiy.png");
     background-size: cover;
-    font-size: 40px;
+    font-size: 30px;
   }
   .more-btn:hover {
     transition: all 0.3s ease-in;

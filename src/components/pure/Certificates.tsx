@@ -11,6 +11,10 @@ import RTL from "../../assets/images/RTL-certificate.png";
 import Games from "../../assets/images/games-js-certificate.png";
 import Udemy from "../../assets/images/udemy-logo.jpg";
 import OpenBootCamp from "../../assets/images/OpenBootcamp-logo.jpg";
+import RestApi from "../../assets/images/rest-api-couse.jpg";
+import MasterHooks from "../../assets/images/react-hooks-master.jpg";
+import NET5Icon from "../../assets/images/NET5API.jpg";
+import NET6Icon from "../../assets/images/NETAPI7.jpg";
 import "../../styles/certificatesComponent/Certificates.css";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { Link } from "react-router-dom";
@@ -41,6 +45,14 @@ const certificatesList = [
     company: "OpenBootcamp",
   },
   {
+    title: ".NET 5 Web API & Entity Framework",
+    hours: 3,
+    link: "https://www.udemy.com/certificate/UC-d4eebf6b-801e-4481-8f0e-c67d8dae81de/",
+    picture: NET5Icon,
+    skills: ["C#", ".NET", "Entity Framework", "SQL", "HTTP"],
+    company: "Udemy",
+  },
+  {
     title: "Git Intermediate",
     hours: 16,
     link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/80007d33-6523-490e-9f1d-ccad53e04bcf",
@@ -49,12 +61,35 @@ const certificatesList = [
     company: "OpenBootcamp",
   },
   {
-    title: "HTML & CSS Intermediate",
-    hours: 17,
-    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/b4f05fd8-348f-46c6-b75f-beac0d37c66a",
-    picture: HTML,
-    skills: ["Selectors", "Bootstrap", "Grid", "Labels"],
-    company: "OpenBootcamp",
+    title: "Rest Api's with ASP.NET & C#",
+    hours: 4.5,
+    link: "https://www.udemy.com/certificate/UC-78832f92-0021-4e57-9600-98bf472f79e1/",
+    picture: RestApi,
+    skills: ["Rest Api's", "C#", "Azure", ".NET"],
+    company: "Udemy",
+  },
+  {
+    title: "Master React Hooks Development",
+    hours: 6,
+    link: "https://udemy.com/certificate/UC-39e77c72-b6aa-42ce-b7af-bc843e4a85bd/",
+    picture: MasterHooks,
+    skills: ["Hooks", "Redux", "Reducers"],
+    company: "Udemy",
+  },
+  {
+    title: ".NET 7 Web API & Entity Framework Jumpstart",
+    hours: 22,
+    link: "https://www.udemy.com/certificate/UC-39ca2d56-8850-482e-abe3-3b3c09fee0f2/",
+    picture: NET6Icon,
+    skills: [
+      ".NET(7,6,5)",
+      "Entity Framework",
+      "Mvc",
+      "API",
+      "JWT",
+      "Authentication",
+    ],
+    company: "Udemy",
   },
   {
     title: "Scrum Fundamentals Certified",
@@ -65,7 +100,7 @@ const certificatesList = [
     company: "SCRUMstudy",
   },
   {
-    title: "React Query / TanStack Query: React Server State Management",
+    title: "React Query",
     hours: 8,
     link: "https://www.udemy.com/certificate/UC-0cdd24dd-e10d-487e-b49e-17692076ade0/",
     picture: ReactQuery,
@@ -102,6 +137,14 @@ const certificatesList = [
     skills: ["Canvas", "Functions", "Loops", "DOM"],
     company: "Udemy",
   },
+  {
+    title: "HTML & CSS Intermediate",
+    hours: 17,
+    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/b4f05fd8-348f-46c6-b75f-beac0d37c66a",
+    picture: HTML,
+    skills: ["Selectors", "Bootstrap", "Grid", "Labels"],
+    company: "OpenBootcamp",
+  },
 ];
 
 interface ICertificateProps {
@@ -109,51 +152,53 @@ interface ICertificateProps {
 }
 const Certificates = ({ toogleCertificate }: ICertificateProps) => {
   return (
-    <div className="main-certificates-container">
+    <>
       <CancelIcon
         fontSize="large"
         className="cancel-btn"
         onClick={() => toogleCertificate(false)}
       />
-      {certificatesList.map((certificate) => (
-        <div key={certificate.title} className="certificate-container">
-          <img
-            className="certificate-pic"
-            src={certificate.picture}
-            alt={certificate.title}
-          ></img>
-          <div className="certificate-information">
-            <Link to={certificate.link} target="_blank">
-              <h2>{certificate.title}</h2>
-            </Link>
-            <p> {certificate.hours} hours</p>
-            <div className="certificate-company-container">
-              <Link
-                target="_blank"
-                to={
-                  certificate.company === "Udemy"
-                    ? "https://www.udemy.com/"
-                    : "https://open-bootcamp.com/"
-                }
-              >
-                <p> {certificate.company}</p>
-                <img
-                  src={certificate.company === "Udemy" ? Udemy : OpenBootCamp}
-                  alt="company"
-                ></img>
+      <div className="main-certificates-container">
+        {certificatesList.map((certificate) => (
+          <div key={certificate.title} className="certificate-container">
+            <img
+              className="certificate-pic"
+              src={certificate.picture}
+              alt={certificate.title}
+            ></img>
+            <div className="certificate-information">
+              <Link to={certificate.link} target="_blank">
+                <h2>{certificate.title}</h2>
               </Link>
-            </div>
-            <div className="certificate-skills-container">
-              {certificate.skills.map((skill, index) => (
-                <p className="skill-items-list" key={skill}>
-                  {skill} {index < certificate.skills.length - 1 && " -"}
-                </p>
-              ))}
+              <p> {certificate.hours} hours</p>
+              <div className="certificate-company-container">
+                <Link
+                  target="_blank"
+                  to={
+                    certificate.company === "Udemy"
+                      ? "https://www.udemy.com/"
+                      : "https://open-bootcamp.com/"
+                  }
+                >
+                  <p> {certificate.company}</p>
+                  <img
+                    src={certificate.company === "Udemy" ? Udemy : OpenBootCamp}
+                    alt="company"
+                  ></img>
+                </Link>
+              </div>
+              <div className="certificate-skills-container">
+                {certificate.skills.map((skill, index) => (
+                  <p className="skill-items-list" key={skill}>
+                    {skill}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

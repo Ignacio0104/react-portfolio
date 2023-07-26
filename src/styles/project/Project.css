@@ -51,6 +51,20 @@
     letter-spacing: 1px;
   }
 }
+@media screen and (max-width: 2500px) {
+  .project-text-container h3 {
+    font-size: 35px;
+  }
+  .project-text-container .project-description {
+    font-size: 18px;
+  }
+  .project-details-container {
+    margin-top: 120px;
+  }
+  .project-details-container p {
+    font-size: 15px;
+  }
+}
 @media screen and (max-width: 1440px) {
   .project-text-container h3 {
     font-size: 35px;

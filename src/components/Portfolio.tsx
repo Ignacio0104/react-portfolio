@@ -13,8 +13,30 @@ import TodoList from "../assets/images/todo-list.jpg";
 import PokeBattle from "../assets/images/pokebattle.jpg";
 import Pomodoro from "../assets/images/Pomodoro.jpg";
 import Rick from "../assets/images/rick-and-morty.jpg";
+import rockPaper from "../assets/images/rockpaperscissors.jpg";
+import pwaApp from "../assets/images/pwaApp.jpg";
 
 const projectsList = [
+  {
+    title: "Expense Tracker (NOT FINISHED)",
+    description:
+      "This application aims to assist users in organizing their finances through highly interactive sections, allowing them to visualize their incomes and expenses effortlessly. Currently, it is released as a Progressive Web App (PWA) for mobile phones, with plans for a website version in the near future.",
+    date: "19 Jul 2023",
+    technologies: ["React", "JS", "SCSS", "Firebase"],
+    role: "Frontend",
+    link: "https://expense-application-tracker.netlify.app/",
+    picture: pwaApp,
+  },
+  {
+    title: "Rock Paper Scissors Lizard Spock",
+    description:
+      "This project is a fully responsive website created as part of a code challenge from the website https://www.frontendmentor.io/challenges. It was developed with the aim of honing skills and gaining expertise in design, animation, and media queries.",
+    date: "30 May 2023",
+    technologies: ["React", "TS", "HTML", "CSS"],
+    role: "Frontend",
+    link: "https://rockpaperscissors-bazinga.netlify.app/",
+    picture: rockPaper,
+  },
   {
     title: "AmbienceHUB",
     description:
