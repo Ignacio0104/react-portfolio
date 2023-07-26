@@ -40,10 +40,8 @@
   .description-container .description-title {
     font-family: "Caveat", cursive;
     font-size: 120px;
-    -webkit-margin-before: 1vh;
-            margin-block-start: 1vh;
-    -webkit-margin-after: 1vh;
-            margin-block-end: 1vh;
+    margin-block-start: 1vh;
+    margin-block-end: 1vh;
   }
   .description-container .description-text {
     font-size: 35px;

@@ -55,20 +55,17 @@
   }
   .certificate-container h2 {
     font-size: 20px;
-    -webkit-margin-after: 5px;
-            margin-block-end: 5px;
+    margin-block-end: 5px;
   }
   .certificate-container p {
     font-size: 14px;
   }
   .certificate-container h2, .certificate-container p {
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
+    margin-block-start: 0px;
     padding-left: 10px;
   }
   .certificate-container p {
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-end: 0px;
   }
   .certificate-container a {
     text-decoration: none;
@@ -120,17 +117,13 @@
   .certificate-container p {
     font-size: 12px;
     padding-left: 10px;
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
   }
   .certificate-container h2 {
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
+    margin-block-start: 0px;
     font-size: 17px;
-    -webkit-margin-after: 5px;
-            margin-block-end: 5px;
+    margin-block-end: 5px;
     padding-left: 10px;
   }
   .certificate-container .certificate-pic {
@@ -163,17 +156,13 @@
   .certificate-container p {
     font-size: 9px;
     padding-left: 10px;
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
   }
   .certificate-container h2 {
-    -webkit-margin-before: 0px;
-            margin-block-start: 0px;
+    margin-block-start: 0px;
     font-size: 13px;
-    -webkit-margin-after: 5px;
-            margin-block-end: 5px;
+    margin-block-end: 5px;
     padding-left: 10px;
   }
   .certificate-container .certificate-pic {
@@ -279,8 +268,7 @@
   .main-certificates-container {
     display: flex;
     flex-direction: column;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 93vh;
     overflow: scroll;
     padding: 0px;
     margin: 5px 40px;
@@ -332,8 +320,7 @@
     font-size: 7px;
   }
   .certificate-container h2 {
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-end: 0px;
   }
 }
 @media screen and (max-width: 412px) and (min-height: 900px) {
@@ -350,8 +337,7 @@
     font-size: 7px;
   }
   .certificate-container h2 {
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-end: 0px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -359,8 +345,7 @@
     margin: 5px 30px;
   }
   .certificate-container h2 {
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-end: 0px;
   }
   .certificate-container p {
     font-size: 5px;

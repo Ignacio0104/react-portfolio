@@ -11,8 +11,7 @@
   .contact-container h2 {
     font-family: "Caveat", cursive;
     font-size: 130px;
-    -webkit-margin-after: 0px;
-            margin-block-end: 0px;
+    margin-block-end: 0px;
   }
   .contact-icons-container {
     display: flex;
@@ -40,8 +39,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 7vh 5vh 7vh 5vh 7vh 5vh 12vh 5vh;
-    -webkit-margin-before: 10px;
-            margin-block-start: 10px;
+    margin-block-start: 10px;
   }
   .input-container input, .input-container textarea {
     width: 900px;
@@ -75,10 +73,8 @@
     font-size: 50px;
   }
   .submit-btn p {
-    -webkit-margin-before: 0;
-            margin-block-start: 0;
-    -webkit-margin-after: 0;
-            margin-block-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
   .spinner {
     color: wheat !important;
