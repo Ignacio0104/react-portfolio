@@ -15,6 +15,7 @@ import RestApi from "../../assets/images/rest-api-couse.jpg";
 import MasterHooks from "../../assets/images/react-hooks-master.jpg";
 import NET5Icon from "../../assets/images/NET5API.jpg";
 import NET6Icon from "../../assets/images/NETAPI7.jpg";
+import AngularCourse from "../../assets/images/angular-course.jpg";
 import "../../styles/certificatesComponent/Certificates.css";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { Link } from "react-router-dom";
@@ -50,6 +51,19 @@ const certificatesList = [
     link: "https://www.udemy.com/certificate/UC-d4eebf6b-801e-4481-8f0e-c67d8dae81de/",
     picture: NET5Icon,
     skills: ["C#", ".NET", "Entity Framework", "SQL", "HTTP"],
+    company: "Udemy",
+  },
+  {
+    title: "Angular Core Deep Dive",
+    hours: 9,
+    link: "https://www.udemy.com/certificate/UC-b4053e2a-a22a-4391-b9d5-a5ba4135c69f/",
+    picture: AngularCourse,
+    skills: [
+      "Components",
+      "Content projection",
+      "Dependency Injection",
+      "Lifecycle Methods",
+    ],
     company: "Udemy",
   },
   {

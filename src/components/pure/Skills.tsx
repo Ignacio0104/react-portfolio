@@ -12,6 +12,7 @@ import PhpIcon from "../../assets/icons/php.png";
 import SassIcon from "../../assets/icons/sass.png";
 import SqlIcon from "../../assets/icons/sql.png";
 import TypeScriptIcon from "../../assets/icons/typescript.png";
+import AngularIcon from "../../assets/icons/angular.png";
 import "../../styles/skills/Skills.css";
 
 const Skills = () => {
@@ -50,6 +51,10 @@ const Skills = () => {
         <div className="skill-item">
           <p>Jest</p>
           <img src={JestIcon} alt="Jest" />
+        </div>
+        <div className="skill-item">
+          <p>Angular</p>
+          <img src={AngularIcon} alt="Angular" />
         </div>
         <div className="skill-item">
           <p>PHP</p>
