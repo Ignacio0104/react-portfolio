@@ -25,6 +25,10 @@ const Skills = () => {
           <img src={ReactIcon} alt="react" />
         </div>
         <div className="skill-item">
+          <p>Angular</p>
+          <img src={AngularIcon} alt="Angular" />
+        </div>
+        <div className="skill-item">
           <p>Css</p>
           <img src={CssIcon} alt="css" />
         </div>
@@ -51,10 +55,6 @@ const Skills = () => {
         <div className="skill-item">
           <p>Jest</p>
           <img src={JestIcon} alt="Jest" />
-        </div>
-        <div className="skill-item">
-          <p>Angular</p>
-          <img src={AngularIcon} alt="Angular" />
         </div>
         <div className="skill-item">
           <p>PHP</p>

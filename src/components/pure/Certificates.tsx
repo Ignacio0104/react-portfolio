@@ -16,34 +16,27 @@ import MasterHooks from "../../assets/images/react-hooks-master.jpg";
 import NET5Icon from "../../assets/images/NET5API.jpg";
 import NET6Icon from "../../assets/images/NETAPI7.jpg";
 import AngularCourse from "../../assets/images/angular-course.jpg";
+import RTLJest from "../../assets/images/rtljest.jpg";
+import AngularComplete from "../../assets/images/angular-complete.jpg";
 import "../../styles/certificatesComponent/Certificates.css";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { Link } from "react-router-dom";
 
 const certificatesList = [
   {
-    title: "React JS Advanced",
-    hours: 30,
-    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/7b8ffe0b-f850-405b-a2a9-2ed2ba25f826",
-    picture: ReactAdv,
-    skills: ["Custom Hooks", "PWA", "Testing", "TypeScript"],
-    company: "OpenBootcamp",
-  },
-  {
-    title: "React JS Intermediate",
-    hours: 30,
-    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/d99c79cd-25c2-4888-89b0-6fa3de3cc426",
-    picture: ReactInt,
-    skills: ["Hooks", "Events", "Routing", "HTTP Requests", "Async"],
-    company: "OpenBootcamp",
-  },
-  {
-    title: "JavaScript Basic",
-    hours: 15,
-    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/8ce5a151-111d-4a99-af2f-0619f9109402",
-    picture: JavaScriptBasic,
-    skills: ["Variables", "POO", "Loops"],
-    company: "OpenBootcamp",
+    title: "Angular - The Complete Guide",
+    hours: 37,
+    link: "https://www.udemy.com/certificate/UC-77dc4770-9277-42aa-b39d-db861461db3f/",
+    picture: AngularComplete,
+    skills: [
+      "Directives",
+      "Dep. Injection",
+      "Services",
+      "NgRx",
+      "HTTP",
+      "Routing",
+    ],
+    company: "Udemy",
   },
   {
     title: ".NET 5 Web API & Entity Framework",
@@ -51,6 +44,36 @@ const certificatesList = [
     link: "https://www.udemy.com/certificate/UC-d4eebf6b-801e-4481-8f0e-c67d8dae81de/",
     picture: NET5Icon,
     skills: ["C#", ".NET", "Entity Framework", "SQL", "HTTP"],
+    company: "Udemy",
+  },
+  {
+    title: "Master React Hooks Development",
+    hours: 6,
+    link: "https://udemy.com/certificate/UC-39e77c72-b6aa-42ce-b7af-bc843e4a85bd/",
+    picture: MasterHooks,
+    skills: ["Hooks", "Redux", "Reducers"],
+    company: "Udemy",
+  },
+  {
+    title: "React Query",
+    hours: 8,
+    link: "https://www.udemy.com/certificate/UC-0cdd24dd-e10d-487e-b49e-17692076ade0/",
+    picture: ReactQuery,
+    skills: [
+      "Queries",
+      "Mutation",
+      "Pre-Fetching",
+      "Authentication",
+      "Testing",
+    ],
+    company: "Udemy",
+  },
+  {
+    title: "React Testing Library and Jest",
+    hours: 7.5,
+    link: "https://www.udemy.com/certificate/UC-a029f12b-c221-4ca6-844e-78c647d9b757/",
+    picture: RTLJest,
+    skills: ["Mock", "Query", "Matchers", "Handlers", "SWR", "Testing"],
     company: "Udemy",
   },
   {
@@ -67,14 +90,6 @@ const certificatesList = [
     company: "Udemy",
   },
   {
-    title: "Git Intermediate",
-    hours: 16,
-    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/80007d33-6523-490e-9f1d-ccad53e04bcf",
-    picture: GitInt,
-    skills: ["Local Repositories", "Merge/Conflicts", "Gitflow", "CI/CD"],
-    company: "OpenBootcamp",
-  },
-  {
     title: "Rest Api's with ASP.NET & C#",
     hours: 4.5,
     link: "https://www.udemy.com/certificate/UC-78832f92-0021-4e57-9600-98bf472f79e1/",
@@ -82,14 +97,7 @@ const certificatesList = [
     skills: ["Rest Api's", "C#", "Azure", ".NET"],
     company: "Udemy",
   },
-  {
-    title: "Master React Hooks Development",
-    hours: 6,
-    link: "https://udemy.com/certificate/UC-39e77c72-b6aa-42ce-b7af-bc843e4a85bd/",
-    picture: MasterHooks,
-    skills: ["Hooks", "Redux", "Reducers"],
-    company: "Udemy",
-  },
+
   {
     title: ".NET 7 Web API & Entity Framework Jumpstart",
     hours: 22,
@@ -113,20 +121,7 @@ const certificatesList = [
     skills: ["Scrum Methodology"],
     company: "SCRUMstudy",
   },
-  {
-    title: "React Query",
-    hours: 8,
-    link: "https://www.udemy.com/certificate/UC-0cdd24dd-e10d-487e-b49e-17692076ade0/",
-    picture: ReactQuery,
-    skills: [
-      "Queries",
-      "Mutation",
-      "Pre-Fetching",
-      "Authentication",
-      "Testing",
-    ],
-    company: "Udemy",
-  },
+
   {
     title: "Complete React Hooks Course",
     hours: 8,
@@ -152,11 +147,43 @@ const certificatesList = [
     company: "Udemy",
   },
   {
-    title: "HTML & CSS Intermediate",
+    title: "HTML & CSS Intermediate (Offline)",
     hours: 17,
     link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/b4f05fd8-348f-46c6-b75f-beac0d37c66a",
     picture: HTML,
     skills: ["Selectors", "Bootstrap", "Grid", "Labels"],
+    company: "OpenBootcamp",
+  },
+  {
+    title: "React JS Advanced (Offline)",
+    hours: 30,
+    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/7b8ffe0b-f850-405b-a2a9-2ed2ba25f826",
+    picture: ReactAdv,
+    skills: ["Custom Hooks", "PWA", "Testing", "TypeScript"],
+    company: "OpenBootcamp",
+  },
+  {
+    title: "React JS Intermediate (Offline)",
+    hours: 30,
+    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/d99c79cd-25c2-4888-89b0-6fa3de3cc426",
+    picture: ReactInt,
+    skills: ["Hooks", "Events", "Routing", "HTTP Requests", "Async"],
+    company: "OpenBootcamp",
+  },
+  {
+    title: "JavaScript Basic (Offline)",
+    hours: 15,
+    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/8ce5a151-111d-4a99-af2f-0619f9109402",
+    picture: JavaScriptBasic,
+    skills: ["Variables", "POO", "Loops"],
+    company: "OpenBootcamp",
+  },
+  {
+    title: "Git Intermediate (Offline)",
+    hours: 16,
+    link: "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/80007d33-6523-490e-9f1d-ccad53e04bcf",
+    picture: GitInt,
+    skills: ["Local Repositories", "Merge/Conflicts", "Gitflow", "CI/CD"],
     company: "OpenBootcamp",
   },
 ];
