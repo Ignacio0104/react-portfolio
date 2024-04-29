@@ -22,6 +22,7 @@ const certificationsURLs = {
     "https://community.open-bootcamp.com/user/ignacio_smirlian/certificaciones/d99c79cd-25c2-4888-89b0-6fa3de3cc426",
   SCRUM:
     "https://www.scrumstudy.com/certification/verify?type=SFC&number=909115",
+  Angular: "https://www.udemy.com/certificate/UC-77dc4770-9277-42aa-b39d-db861461db3f/"
 };
 
 interface IEducationProps {
@@ -40,6 +41,14 @@ const Education = ({ toogleCertificate }: IEducationProps) => {
         <div className="list-item">
           <h5>Courses and certifications</h5>
           <div className="certificates-container">
+          <Link
+              className="certificates-links"
+              to={certificationsURLs.Angular}
+              target="_blank"
+            >
+              Angular
+              <WorkspacePremiumIcon />
+            </Link>
             <Link
               className="certificates-links"
               to={certificationsURLs.ReactJSAdvanced}
@@ -56,14 +65,7 @@ const Education = ({ toogleCertificate }: IEducationProps) => {
               RTL and Jest
               <WorkspacePremiumIcon />
             </Link>
-            <Link
-              className="certificates-links"
-              to={certificationsURLs.ReactQuery}
-              target="_blank"
-            >
-              React Query
-              <WorkspacePremiumIcon />
-            </Link>
+      
           </div>
         </div>
       </div>

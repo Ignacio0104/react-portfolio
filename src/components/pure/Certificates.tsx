@@ -5,6 +5,7 @@ import JavaScriptBasic from "../../assets/images/javascript-basic.png";
 import GitInt from "../../assets/images/git-int-certificate.png";
 import HTML from "../../assets/images/HTMLCSS-basic-certificate.png";
 import Scrum from "../../assets/images/badge-SFC.png";
+import FlutterBeginner from "../../assets/images/Flutter-beginner.jpg"
 import ReactQuery from "../../assets/images/react-query-certificate.png";
 import ReactHooks from "../../assets/images/react-hooks-certificate.png";
 import RTL from "../../assets/images/RTL-certificate.png";
@@ -44,6 +45,14 @@ const certificatesList = [
     link: "https://www.udemy.com/certificate/UC-d4eebf6b-801e-4481-8f0e-c67d8dae81de/",
     picture: NET5Icon,
     skills: ["C#", ".NET", "Entity Framework", "SQL", "HTTP"],
+    company: "Udemy",
+  },
+  {
+    title: "Flutter - Beginners Course",
+    hours: 2.5,
+    link: "https://www.udemy.com/certificate/UC-f4a2376b-cf78-44e7-8e84-bb082b850947/",
+    picture: FlutterBeginner,
+    skills: ["Flutter", "Dart", "Android Studio"],
     company: "Udemy",
   },
   {

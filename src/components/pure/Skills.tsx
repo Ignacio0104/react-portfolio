@@ -4,7 +4,7 @@ import CssIcon from "../../assets/icons/css.png";
 import FirebaseIcon from "../../assets/icons/firebase.png";
 import GithubIcon from "../../assets/icons/github.png";
 import GraphQlIcon from "../../assets/icons/graphQl.png";
-import HtmlIcon from "../../assets/icons/html.png";
+import JasmineIcon from "../../assets/icons/jasmine-logo.png";
 import JavaIcon from "../../assets/icons/java.png";
 import JavaScriptIcon from "../../assets/icons/javascript.png";
 import JestIcon from "../../assets/icons/jest.png";
@@ -13,6 +13,7 @@ import SassIcon from "../../assets/icons/sass.png";
 import SqlIcon from "../../assets/icons/sql.png";
 import TypeScriptIcon from "../../assets/icons/typescript.png";
 import AngularIcon from "../../assets/icons/angular.png";
+import NgrxIcon from "../../assets/icons/ngrx.svg"
 import "../../styles/skills/Skills.css";
 
 const Skills = () => {
@@ -29,12 +30,8 @@ const Skills = () => {
           <img src={AngularIcon} alt="Angular" />
         </div>
         <div className="skill-item">
-          <p>Css</p>
-          <img src={CssIcon} alt="css" />
-        </div>
-        <div className="skill-item">
-          <p>HTML</p>
-          <img src={HtmlIcon} alt="HTML" />
+          <p>NgRx</p>
+          <img src={NgrxIcon} alt="Ngrx" />
         </div>
         <div className="skill-item">
           <p>JavaScript</p>
@@ -43,6 +40,14 @@ const Skills = () => {
         <div className="skill-item">
           <p>Sass</p>
           <img src={SassIcon} alt="sass" />
+        </div>
+        <div className="skill-item">
+          <p>Jasmine</p>
+          <img src={JasmineIcon} alt="Jasmine" />
+        </div>
+        <div className="skill-item">
+          <p>TypeScript</p>
+          <img src={TypeScriptIcon} alt="TypeScript" />
         </div>
         <div className="skill-item">
           <p>GitHub</p>
@@ -60,10 +65,7 @@ const Skills = () => {
           <p>PHP</p>
           <img src={PhpIcon} alt="PHP" />
         </div>
-        <div className="skill-item">
-          <p>TypeScript</p>
-          <img src={TypeScriptIcon} alt="TypeScript" />
-        </div>
+
         <div className="skill-item">
           <p>C#.NET</p>
           <img src={CSharpIcon} alt="C#.NET" />

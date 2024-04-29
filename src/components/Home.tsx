@@ -15,10 +15,10 @@ const Home = () => {
             <p className="description-text">Hello, I'm </p>
             <h3 className="description-title">Ignacio Smirlian</h3>
             <p className="description-text">
-              A passionate <span>Frontend developer </span>dedicated to creating
-              interactive web experiences, skilled in <span>HTML</span>,
-              <span> CSS</span>,<span> JavaScript</span>, and
-              <span> React</span>, among other technologies.
+              A passionate <span>Developer </span>dedicated to creating
+              interactive web experiences, skilled in <span>Angular</span>,
+              <span> React </span>,<span> TypeScript </span>, and
+              <span> Flutter </span>, among other technologies.
             </p>
             <div className="button-container">
               <div className="btn-cv-container">
