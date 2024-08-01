@@ -28,16 +28,6 @@ const projectsList = [
     picture: pwaApp,
   },
   {
-    title: "Rock Paper Scissors Lizard Spock",
-    description:
-      "This project is a fully responsive website created as part of a code challenge from the website https://www.frontendmentor.io/challenges. It was developed with the aim of honing skills and gaining expertise in design, animation, and media queries.",
-    date: "30 May 2023",
-    technologies: ["React", "TS", "HTML", "CSS"],
-    role: "Frontend",
-    link: "https://rockpaperscissors-bazinga.netlify.app/",
-    picture: rockPaper,
-  },
-  {
     title: "AmbienceHUB",
     description:
       "Its main objective is to provide an appropriate ambience for people to study/work for long hours. This app is connected to Firebase, which means that all modifications are perdurable. This project is completely mobile responsive and it manages the main state through the useReducer hook. \n More versions and features are yet to come...",
@@ -46,6 +36,16 @@ const projectsList = [
     role: "Frontend",
     link: "https://ambiencemusichub.netlify.app/",
     picture: AmbienceHub,
+  },
+  {
+    title: "Rock Paper Scissors Lizard Spock",
+    description:
+      "This project is a fully responsive website created as part of a code challenge from the website https://www.frontendmentor.io/challenges. It was developed with the aim of honing skills and gaining expertise in design, animation, and media queries.",
+    date: "30 May 2023",
+    technologies: ["React", "TS", "HTML", "CSS"],
+    role: "Frontend",
+    link: "https://rockpaperscissors-bazinga.netlify.app/",
+    picture: rockPaper,
   },
   {
     title: "Rick and Morty GraphQl",

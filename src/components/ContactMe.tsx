@@ -58,7 +58,7 @@ const ContactMe = () => {
         "service_13z2oas",
         "template_khgxahe",
         mailInformation,
-        "2YXjJJN_IwyNytu48"
+        "1rIJm5_Z1ISbAyHTt"
       )
       .then((result) => {
         setMailInformation({ name: "", email: "", subject: "", message: "" });

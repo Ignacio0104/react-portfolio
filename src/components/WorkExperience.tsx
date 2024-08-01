@@ -26,24 +26,23 @@ const WorkExperience = () => {
           <div className="card">
             <div className="info">
               <h3 className="title">
-                Web UI Developer | Globant <span> (April 2023 - Present)</span>
+                Web UI Developer | Globant <span> (January 2023 - Present)</span>
               </h3>
               <ul>
                 <li>
-                  Develop and maintain visually appealing and user-friendly web
-                  pages using HTML, CSS, and React JS.
+                Develop multiple interconnected web pages with complex workflows according to client expectations
                 </li>
                 <li>
-                  Implement and maintain API integrations for data exchange
-                  between systems.
+                Implement and maintain reusable components for the company's internal library
                 </li>
                 <li>
-                  Ensure that all components are responsive and accessible
-                  across different devices and platforms
+                Integrate diverse backend resources
                 </li>
                 <li>
-                  Participate in training sessions and courses, attend
-                  conferences, and read relevant blogs and articles.
+                Contribute to the design and architecture of future developments
+                </li>
+                <li>
+                Demonstrate application progress to clients and stakeholders through bi-weekly meetings
                 </li>
               </ul>
             </div>
@@ -78,22 +77,20 @@ const WorkExperience = () => {
             <div className="info">
               <h3 className="title">
                 Oracle Functional | Globant
-                <span> (March 2022 - April 2023)</span>
+                <span> (April 2022 - January 2023)</span>
               </h3>
               <ul>
                 <li>
-                  Analyze and provide solutions to JD Edwards users through an
-                  incident tickets system
+                Analyze and resolve issues for JD Edwards users through an incident ticket system.
                 </li>
                 <li>
-                  Understanding of the client's business and its processes
+                Develop a deep understanding of the client's business and its processes.
                 </li>
                 <li>
                   Suggest and work on system improvements whenever possible
                 </li>
                 <li>
-                  Monthly analysis and reporting about the flow, status, and
-                  backlog of all tickets processed
+                Conduct monthly analysis and reporting on the flow, status, and backlog of all processed tickets.
                 </li>
               </ul>
             </div>

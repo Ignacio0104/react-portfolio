@@ -1,6 +1,6 @@
 import ProfilePic from "../assets/images/profile-pic-small.jpg";
 import "../styles/homeComponent/Home.css";
-import CvFile from "../assets/documents/IgnacioSmirlian-CV2023.pdf";
+import CvFile from "../assets/documents/IgnacioSmirlian-CV2024.pdf";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Home = () => {

@@ -10,7 +10,7 @@ import JavaScriptIcon from "../../assets/icons/javascript.png";
 import JestIcon from "../../assets/icons/jest.png";
 import PhpIcon from "../../assets/icons/php.png";
 import SassIcon from "../../assets/icons/sass.png";
-import SqlIcon from "../../assets/icons/sql.png";
+import FlutterIcon from "../../assets/icons/flutter.png"
 import TypeScriptIcon from "../../assets/icons/typescript.png";
 import AngularIcon from "../../assets/icons/angular.png";
 import NgrxIcon from "../../assets/icons/ngrx.svg"
@@ -54,6 +54,10 @@ const Skills = () => {
           <img src={GithubIcon} alt="github" />
         </div>
         <div className="skill-item">
+          <p>Flutter</p>
+          <img src={FlutterIcon} alt="SQL" />
+        </div>
+        <div className="skill-item">
           <p>GraphQl</p>
           <img src={GraphQlIcon} alt="GraphQl" />
         </div>
@@ -69,10 +73,6 @@ const Skills = () => {
         <div className="skill-item">
           <p>C#.NET</p>
           <img src={CSharpIcon} alt="C#.NET" />
-        </div>
-        <div className="skill-item">
-          <p>SQL</p>
-          <img src={SqlIcon} alt="SQL" />
         </div>
         <div className="skill-item">
           <p>Firebase</p>
