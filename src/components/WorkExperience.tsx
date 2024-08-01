@@ -98,32 +98,18 @@ const WorkExperience = () => {
           <div className="card">
             <div className="info">
               <h3 className="title">
-                Account Executive | Gaston-Sacaze DMC
-                <span> (May 2019 - March 2022)</span>
+                Developer | Freelance / Contractor <span> (February 2022 - Present)</span>
               </h3>
               <ul>
-                <li>Preparation of tailor-made touristic packages</li>
-                <li>Group trip management</li>
                 <li>
-                  Comprehensive tourist counseling on Argentina and Latin
-                  America
+                Full-Stack Development: Perform both front-end and back-end development tasks to create dynamic, user-friendly web applications.
                 </li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="info">
-              <h3 className="title">
-                Sales Executive | ATI Viajes
-                <span> (April 2018 - February 2019)</span>
-              </h3>
-              <ul>
-                <li>Assembly and quotation of tourist packages.</li>
                 <li>
-                  Providing trip counseling regarding activities, documentation,
-                  tours, etc.
+                Design and Architect Web Pages: Apply thoughtful design and architecture principles to ensure scalability, performance, and maintainability of web pages.
                 </li>
-                <li>Billing and follow-up services.</li>
+                <li>
+                Responsive and Accessible Design: Ensure every component of the web application is responsive and accessible across various devices and platforms.
+                </li>
               </ul>
             </div>
           </div>
