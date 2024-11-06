@@ -18,7 +18,7 @@ const Home = () => {
               A passionate <span>Developer </span>dedicated to creating
               interactive web experiences, skilled in <span>Angular</span>,
               <span> React </span>,<span> TypeScript </span>, and
-              <span> Flutter </span>, among other technologies.
+              <span> Next JS </span>, among other technologies.
             </p>
             <div className="button-container">
               <div className="btn-cv-container">

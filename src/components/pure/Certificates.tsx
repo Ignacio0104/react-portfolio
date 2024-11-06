@@ -17,6 +17,7 @@ import MasterHooks from "../../assets/images/react-hooks-master.jpg";
 import NET5Icon from "../../assets/images/NET5API.jpg";
 import NET6Icon from "../../assets/images/NETAPI7.jpg";
 import AngularCourse from "../../assets/images/angular-course.jpg";
+import NextJSCourse from "../../assets/images/NEXT-JS-COURSE.jpg"
 import RTLJest from "../../assets/images/rtljest.jpg";
 import AngularComplete from "../../assets/images/angular-complete.jpg";
 import "../../styles/certificatesComponent/Certificates.css";
@@ -24,6 +25,19 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import { Link } from "react-router-dom";
 
 const certificatesList = [
+  {
+    title: "Next JS: The Complete Developer's Guide",
+    hours: 15.5,
+    link: "https://www.udemy.com/certificate/UC-5950a566-367e-4aa9-80b6-4d5df78094dc/",
+    picture: NextJSCourse,
+    skills: [
+      "Next JS",
+      "React",
+      "Authentication",
+      "Typescript",
+    ],
+    company: "Udemy",
+  },
   {
     title: "Angular - The Complete Guide",
     hours: 37,
