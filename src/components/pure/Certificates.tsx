@@ -15,6 +15,7 @@ import OpenBootCamp from "../../assets/images/OpenBootcamp-logo.jpg";
 import RestApi from "../../assets/images/rest-api-couse.jpg";
 import MasterHooks from "../../assets/images/react-hooks-master.jpg";
 import NET5Icon from "../../assets/images/NET5API.jpg";
+import GoogleSeo from "../../assets/images/Google-SEO.jpg"
 import NET6Icon from "../../assets/images/NETAPI7.jpg";
 import AngularCourse from "../../assets/images/angular-course.jpg";
 import NextJSCourse from "../../assets/images/NEXT-JS-COURSE.jpg"
@@ -59,6 +60,17 @@ const certificatesList = [
     link: "https://www.udemy.com/certificate/UC-d4eebf6b-801e-4481-8f0e-c67d8dae81de/",
     picture: NET5Icon,
     skills: ["C#", ".NET", "Entity Framework", "SQL", "HTTP"],
+    company: "Udemy",
+  },
+  {
+    title: "Search Engine Optimization Tutorial",
+    hours: 37,
+    link: "https://www.udemy.com/certificate/UC-3645053c-bd07-4a8a-bfcf-f9625665cc3f/",
+    picture: GoogleSeo,
+    skills: [
+      "SEO",
+      "Google Analytics"
+    ],
     company: "Udemy",
   },
   {
