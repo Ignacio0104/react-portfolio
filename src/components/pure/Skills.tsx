@@ -1,6 +1,5 @@
 import ReactIcon from "../../assets/icons/react-icon.png";
 import CSharpIcon from "../../assets/icons/CSharp.png";
-import CssIcon from "../../assets/icons/css.png";
 import FirebaseIcon from "../../assets/icons/firebase.png";
 import GithubIcon from "../../assets/icons/github.png";
 import GraphQlIcon from "../../assets/icons/graphQl.png";
@@ -10,10 +9,10 @@ import JavaScriptIcon from "../../assets/icons/javascript.png";
 import JestIcon from "../../assets/icons/jest.png";
 import PhpIcon from "../../assets/icons/php.png";
 import SassIcon from "../../assets/icons/sass.png";
-import FlutterIcon from "../../assets/icons/flutter.png"
+import ReactNative from "../../assets/icons/react-native.png";
 import TypeScriptIcon from "../../assets/icons/typescript.png";
 import AngularIcon from "../../assets/icons/angular.png";
-import NgrxIcon from "../../assets/icons/ngrx.svg"
+import NgrxIcon from "../../assets/icons/ngrx.svg";
 import "../../styles/skills/Skills.css";
 
 const Skills = () => {
@@ -54,8 +53,8 @@ const Skills = () => {
           <img src={GithubIcon} alt="github" />
         </div>
         <div className="skill-item">
-          <p>Flutter</p>
-          <img src={FlutterIcon} alt="SQL" />
+          <p>React Native</p>
+          <img src={ReactNative} alt="React Native" />
         </div>
         <div className="skill-item">
           <p>GraphQl</p>
